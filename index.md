@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Home Page
-tagline: Codespear's pages
+title: 
+tagline: Ramblings, rants and other nonsense
 ---
 {% include JB/setup %}
 
