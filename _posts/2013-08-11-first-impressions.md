@@ -10,9 +10,9 @@ I decided to create accounts on [google analytics](http://www.google.com/analyti
 
 Other cool things I hope to learn more about is [jekyll](http://jekyllrb.com/), [markdown](http://daringfireball.net/projects/markdown/) and [liquid](http://liquidmarkup.org/).
 
-Strictly it is not required, but it would be nice to host locally. Because I am running on Windows, this ain't gonna be easy. Madhur Ahuja seems to have a [solution](http://www.madhur.co.in/blog/2013/07/20/buildportablejekyll.html). [Dropbox](https://www.dropbox.com/) might be useful but it takes ages to download the 215 MS zip file.
+Strictly it is not required, but it would be nice to host locally. Because I am running on Windows, this ain't gonna be easy. Madhur Ahuja seems to have a [solution](http://www.madhur.co.in/blog/2013/07/20/buildportablejekyll.html). He placed a files in [dropbox](https://www.dropbox.com/).  This is useful but it takes ages to download the 215 MS zip file from there.
 
-My first impression of [github pages](http://pages.github.com/) is that I have at last a blogging solution where I can:
+My first impressions of [github pages](http://pages.github.com/) is that I have at last a blogging solution where I can:
  * write content using simple text files  
  * control the formatting
  * use GitHub to manage the content 
