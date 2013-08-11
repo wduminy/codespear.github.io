@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: [jekyll]
+tags: [github pages]
 ---
 Getting this site up and running was easy. But, I had to go fiddle here and tweak there. Before I know it the afternoon was at an end. 
 
