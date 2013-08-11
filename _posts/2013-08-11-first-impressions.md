@@ -2,7 +2,6 @@
 layout: post
 tags: [jekyll]
 ---
-{% include JB/setup %}
 
 Getting this site up and running was easy.{% excerpt_separator %} But, I had to go fiddle here and tweak there. Before I know it the afternoon was at an end. 
 
