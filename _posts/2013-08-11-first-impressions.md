@@ -2,8 +2,8 @@
 layout: post
 tags: [jekyll]
 ---
+Getting this site up and running was easy. But, I had to go fiddle here and tweak there. Before I know it the afternoon was at an end. 
 
-Getting this site up and running was easy.{% excerpt_separator %} But, I had to go fiddle here and tweak there. Before I know it the afternoon was at an end. 
 
 I created accounts on [google analytics](http://www.google.com/analytics/) and [disqus](http://codespear.disqus.com/).  _Disqus_ is new to me, but it looks quite interesting.
 
