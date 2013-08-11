@@ -3,7 +3,7 @@ layout: post
 category: rambling
 tags: [github pages]
 ---
-Getting this site up and running was easy. But, I had to go fiddle here and tweak there. Before I know it the afternoon was at an end. 
+Getting this site up and running was easy. But, I had to go fiddle here and tweak there. Before I knew it the afternoon was at an end. 
 
 
 I decided to create accounts on [google analytics](http://www.google.com/analytics/) and [disqus](http://codespear.disqus.com/).  _Disqus_ is new to me, but it looks quite interesting.  
