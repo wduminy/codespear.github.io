@@ -1,9 +1,8 @@
 ---
 layout: page
-title: 
+title: Tumblehome
 tagline: ramblings, rants and other stuff
 ---
-{% include JB/setup %}
 
 <ul class="posts">
   {% for post in site.posts %}
