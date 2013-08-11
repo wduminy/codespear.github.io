@@ -1,16 +1,14 @@
 ---
 layout: post
-category: rambling
 tags: [jekyll]
 ---
 {% include JB/setup %}
 
-Getting this site up and running was easy.  But, I had to fiddle here and there, and before I know it the afternoon was at an end. 
+Getting this site up and running was easy.{% excerpt_separator %} But, I had to go fiddle here and tweak there. Before I know it the afternoon was at an end. 
 
 I created accounts on [google analytics](http://www.google.com/analytics/) and [disqus](http://codespear.disqus.com/).  _Disqus_ is new to me, but it looks quite interesting.
 
-Other cool things I hope to learn more about is [jekyll](http://jekyllrb.com/) [markdown](http://daringfireball.net/projects/markdown/) and [liquid](http://liquidmarkup.org/).
-
+Other cool things I hope to learn more about is [jekyll](http://jekyllrb.com/), [markdown](http://daringfireball.net/projects/markdown/) and [liquid](http://liquidmarkup.org/).
 
 My first impression of [github pages](http://pages.github.com/) is that I have at last a blogging solution works like I want to work:
  * Write content using simple text files  
