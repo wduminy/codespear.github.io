@@ -2,6 +2,7 @@
 layout: post
 category: rambling
 tags: [github pages]
+excerpt: Getting this site up and running was easy.
 ---
 Getting this site up and running was easy. But, I had to go fiddle here and tweak there. Before I knew it the afternoon was at an end. 
 
@@ -12,13 +13,13 @@ Other cool things I hope to learn more about is [jekyll](http://jekyllrb.com/), 
 
 Strictly it is not required, but I thought it would be nice to host the site locally. Because I am running on Windows, this could be complicated. However Madhur Ahuja saved me a lot of time with his [solution](http://www.madhur.co.in/blog/2013/07/20/buildportablejekyll.html). After downloading the [dropbox](https://www.dropbox.com/) file, it all works great.
 
-I even get a near wzysiwig experience.  When I save a change it updates automatically.  Here a script called _serve.cmd_:
+I even get a near wyziwig experience.  When I save a change it updates automatically.  Here a script called _serve.cmd_:
 {% highlight bat %}
 set path=%path%;I:\programs\jekyll\ruby\bin;I:\programs\jekyll\devkit\bin;I:\programs\jekyll\Python\App;
 jekyll server --drafts --watch
 {% endhighlight %} 	
 
-My first impressions of [github pages](http://pages.github.com/) is that I have at last a blogging solution where I can:
+My first impression of [github pages](http://pages.github.com/) is that I have at last a blogging solution where I can:
  * write content using simple text files  
  * control the formatting
  * use GitHub to manage the content 

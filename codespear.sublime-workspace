@@ -1,0 +1,712 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"a",
+				"align	Attr"
+			],
+			[
+				"h",
+				"href	Attr"
+			],
+			[
+				"s",
+				"span	Tag"
+			],
+			[
+				"t",
+				"table	Tag"
+			],
+			[
+				"en",
+				"endhighlight"
+			],
+			[
+				"ff",
+				"f8f8f2"
+			],
+			[
+				"code",
+				"codespear"
+			],
+			[
+				"te",
+				"test_agency_id"
+			],
+			[
+				"cla",
+				"class"
+			],
+			[
+				"class",
+				"classpath"
+			],
+			[
+				"cl",
+				"classpath"
+			],
+			[
+				"Cuff",
+				"cuffapi"
+			],
+			[
+				"f",
+				"file_include_patterns"
+			],
+			[
+				"in",
+				"include"
+			],
+			[
+				"Main",
+				"MainPage"
+			],
+			[
+				"main",
+				"main_page"
+			],
+			[
+				"pro",
+				"project_query_item"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "_posts/2013-08-11-first-impressions.md",
+			"settings":
+			{
+				"buffer_size": 1804,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_drafts/draft.md",
+			"settings":
+			{
+				"buffer_size": 297,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_posts/2013-08-18-terrain-rendering-with-GLSL.md",
+			"settings":
+			{
+				"buffer_size": 2740,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "codespear.sublime-project",
+			"settings":
+			{
+				"buffer_size": 170,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/C++/C++.sublime-build",
+	"command_palette":
+	{
+		"height": 381.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"task",
+				"Tasks: New document"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remoe",
+				"Package Control: Remove Package"
+			],
+			[
+				"Tas",
+				"Set Syntax: Task"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"taskw",
+				"Taskwarrior: View Tasks"
+			],
+			[
+				"todo",
+				"Show TODOs: Project and open files"
+			],
+			[
+				"pakrem",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa:re",
+				"Package Control: Remove Package"
+			],
+			[
+				"packarem",
+				"Package Control: Remove Package"
+			],
+			[
+				"packr",
+				"Package Control: Remove Package"
+			],
+			[
+				"pakcre",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: int",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"m",
+				"Set Syntax: Makefile"
+			]
+		],
+		"width": 699.0
+	},
+	"console":
+	{
+		"height": 239.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"make",
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_drafts/terrain-rendering-with-GLSL.md",
+		"/G/my_stuff.md",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/codespear.sublime-project",
+		"/C/Users/willemd/AppData/Roaming/Sublime Text 3/Packages/SmartMarkdown/Default.sublime-keymap",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_drafts/terrain-rendering-with-glsl.md",
+		"/G//my_stuff.md",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/assets/themes/twitter/css/style.css",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/serve.cmd",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_posts/2013-08-11-first-impressions.md",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_includes/themes/twitter/default.html",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/assets/css/pygment.css",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/css/pygments.css",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_drafts/draft.md",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_config.yml",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/pages.html",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_layouts/post.html",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/index.md",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_posts/core-samples/2011-12-29-jekyll-introduction.md",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_posts/2013-08-11-what-i-did-first.md",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_posts/2013-08-11-first-post.md",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/index.html",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_posts/2013-08-10-first-post.md",
+		"/G/my_examples/sg246302/sample-application/SAL330RGEFDemoApplication/src/com/ibm/itso/sal330r/gefdemo/edit/ChoiceEditPart.java",
+		"/G/my_examples/sg246302/sample-application/SAL330RGEFDemoApplication/src/com/ibm/itso/sal330r/gefdemo/edit/WorkflowContainerEditPolicy.java",
+		"/C/vastech/workbench/Badger/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info",
+		"/G/code/cuffserver/test/test/cuff/db/test_data.sql",
+		"/C/scratch/stuff.txt",
+		"/G/code/cuffapi/custbuild.xml",
+		"/C/Users/willemd/Documents/GitHub/GameEx/GameLandLib/.cproject",
+		"/G/code/logs/hornetq.log",
+		"/C/scratch/test123.xml",
+		"/C/vastech/workbench/Badger/.eclipseproduct",
+		"/G/code/cuffserver/src/com/vastech/cuff/server/cases_001.sql",
+		"/G/code/cuffserver/src/com/vastech/cuff/server/organisation_001.sql",
+		"/G/code/cuffserver/src/com/vastech/cuff/server/retrieval_001.sql",
+		"/C/Users/willemd/Documents/GitHub/GameEx/GameLand/.project",
+		"/C/Users/willemd/Documents/GitHub/GameEx/GameLand/.cproject",
+		"/G/code/cuffapi/build.xml",
+		"/G/my_sublime.sublime-project",
+		"/G/code/cuffserver/my_config/hornetq-beans.xml",
+		"/G/code/cuffserver/test/test/cuff/db/purge.sql",
+		"/G/code/install/ozone.ifl",
+		"/G/code/install/custbuild.xml",
+		"/G/my_antlr/ozone.ifl",
+		"/G/code/cuffserver/custbuild.xml",
+		"/C/development/gui/code/cuffserver/.classpath",
+		"/C/Program Files (x86)/Perforce/qt.conf",
+		"/G/code/cuffserver/config/hornetq-beans.xml",
+		"/G/code/cuffserver/src/com/vastech/cuff/server/base_001.sql",
+		"/G/code/cuffserver/.project",
+		"/G/code/cuffserver/src/com/vastech/cuff/server/admin_001.sql",
+		"/S/vpn/client.ovpn",
+		"/G/code/cuffserver/my_hornet.cmd",
+		"/S/vpn/client-45.csr",
+		"/C/Program Files/OpenVPN/config/client.ovpn",
+		"/G/code/badgerui/custbuild.xml",
+		"/S/vpn/client-45.crt",
+		"/G/code/protos/next/face/face.proto",
+		"/G/code/protos/next/frame/frame.proto",
+		"/G/code/protos/next/qgw/pb/qgw.proto",
+		"/C/Program Files (x86)/VMware/Infrastructure/vSphere PowerCLI/Scripts/updateBadgerIso.ps1",
+		"/G/code/cuffapi/proto/retrievalapi.proto",
+		"/G/code/cuffserver/my_master.cmd",
+		"/G/code/cuffserver/my_config/logging.properties",
+		"/G/code/cuffserver/my_config/hornetq-configuration.xml",
+		"/C/Users/willemd/AppData/Roaming/Sublime Text 2/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/G/code/cuffserver/config/logging.properties",
+		"/C/Users/willemd/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/willemd/AppData/Roaming/Sublime Text 2/Packages/User/Plain text.sublime-settings",
+		"/C/Users/willemd/Documents/GitHub/GameEx/GameLand/src/duality/duality_main.cpp",
+		"/C/Users/willemd/Documents/GitHub/GameEx/GameLand/src/game/game_objects.h",
+		"/C/Users/willemd/Documents/GitHub/GameEx/GameLand/src/game/game.cpp",
+		"/C/Users/willemd/Documents/GitHub/GameEx/GameLand/src/duality/main_scene.h",
+		"/C/Users/willemd/Documents/GitHub/GameEx/GameLand/src/game/font.h",
+		"/C/Users/willemd/Documents/GitHub/GameEx/GameLand/src/game/game.h",
+		"/C/Users/willemd/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/willemd/AppData/Roaming/Sublime Text 2/Packages/PlainTasks/messages/Tutorial.todo",
+		"/C/Users/willemd/Documents/GitHub/GameEx/GameLand/src/my_tasks.todo",
+		"/C/Users/willemd/Documents/GitHub/GameEx/.gitignore",
+		"/C/Users/willemd/Documents/GitHub/GameEx/gameex.sublime-project",
+		"/C/Users/willemd/Documents/GitHub/GameEx/GameLand/src/duality/controller.cpp",
+		"/C/Users/willemd/AppData/Roaming/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/C/Users/willemd/Documents/GitHub/GameEx/GameLand/src/todo.txt",
+		"/C/Users/willemd/Documents/GitHub/GameEx/.metadata/.plugins/org.eclipse.core.resources/.projects/GameLand/org.eclipse.egit.core/GitProjectData.properties",
+		"/C/Users/willemd/Documents/GitHub/GameEx/GameLand/media/duality/fence.frag",
+		"/C/Users/willemd/Documents/GitHub/GameEx/GameLand/media/duality/arena.frag",
+		"/C/Users/willemd/Documents/GitHub/GameEx/GameLand/src/duality/main_scene.cpp",
+		"/G/.gitattributes",
+		"/C/development/gui/code/badgerui/badger_model/com/vastech/localdb/project_004.sql",
+		"/C/development/gui/code/badgerui/badger_model/com/vastech/localdb/project_003.sql",
+		"/C/scratch/page006.xml",
+		"/C/development/ngmc/trunk/src-redist-full/Redistributables/OCR_Verus/Verus/crs-api-sample.cpp",
+		"/C/development/ngmc/trunk/src-redist-full/Redistributables/OCR_Verus/Verus/crs-api-sample-zone.cpp",
+		"/C/development/ngmc/trunk/src/MediaServer/.project",
+		"/C/development/ngmc/trunk/src/MediaServer/.classpath",
+		"/C/development/ngmc/trunk/src/MediaServer/build.xml",
+		"/C/development/ngmc/trunk/src/TextSearch/.classpath",
+		"/C/development/github/Racer/TorcsRCS/torcs/WrapperBaseDriver.h",
+		"/C/Users/willemd/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/development/boogaloo/build.xml",
+		"/C/development/boogaloo/src/boogaloo/Background.scala",
+		"/C/development/github/Racer/README.md",
+		"/C/development/github/Racer/TorcsRCS/Makefile",
+		"/C/development/github/Racer/TorcsRCS/torcs/CarControl.cpp",
+		"/C/Users/willemd/Documents/TXCUserDictionary.dic"
+	],
+	"find":
+	{
+		"height": 49.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			">\n",
+			"ID",
+			"\">\n",
+			"		",
+			"codehilite",
+			"49483e",
+			"background-color",
+			"f8f8f2",
+			"#49483e",
+			".codehilite",
+			"markup",
+			"site",
+			"EUNKN",
+			"user_acc",
+			"test_agency",
+			"operator_profile_id",
+			"INFO",
+			"03",
+			";\n",
+			"name",
+			"();\n",
+			"code",
+			" \"",
+			",",
+			"Mean",
+			"_ms ",
+			"_ms",
+			"name",
+			"range",
+			"Range",
+			"range",
+			"}",
+			"{",
+			"lib/zebra/",
+			"zebra",
+			"s:\\\\vpn",
+			"0x0000000009a5f000",
+			"version",
+			"(SessionEntry::send)",
+			"(CuffConsumer::consume)",
+			"T=trans_end",
+			"T=comp_end",
+			"T=comp_start",
+			")\n",
+			"<-*",
+			"*->",
+			"T=",
+			"U=admin",
+			"Q=",
+			"2013",
+			"TransactionId:",
+			"\\\"",
+			"	\n",
+			"proto_to_java",
+			"descriptor",
+			"source",
+			"src",
+			"proto_to_java",
+			"protoc",
+			"checkPath",
+			"AddressSource",
+			"AddressContext",
+			"AddressType",
+			"Protocol",
+			"protocol",
+			"Protocol",
+			"protocol",
+			"Protocol",
+			"InterceptType",
+			"Retrieval",
+			")\n",
+			"MainPage",
+			"GameObject",
+			"GameObjectChainLink",
+			"ruler",
+			"systemex",
+			"DualityScene",
+			"our",
+			"L009",
+			"L010",
+			"lineID",
+			"Steel Merchants",
+			"dm )go"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "_posts/2013-08-11-first-impressions.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1804,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								108,
+								108
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_drafts/draft.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 297,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								109,
+								109
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_posts/2013-08-18-terrain-rendering-with-GLSL.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2740,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								115,
+								115
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 744.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "codespear.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 170,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								37,
+								37
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 39.0
+	},
+	"input":
+	{
+		"height": 49.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 320.0
+	},
+	"project": "codespear.sublime-project",
+	"replace":
+	{
+		"height": 74.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"hpolic",
+				"SAL330RGEFDemoApplication\\src\\com\\ibm\\itso\\sal330r\\gefdemo\\edit\\CompoundHighlightEditPolicy.java"
+			],
+			[
+				"gamec",
+				"src/game/game.cpp"
+			],
+			[
+				"gameh",
+				"src/game/game.h"
+			],
+			[
+				"font",
+				"src/game/font.h"
+			],
+			[
+				"gameob",
+				"src/game/game_objects.h"
+			],
+			[
+				"scene",
+				"src/duality/main_scene.cpp"
+			],
+			[
+				"dual",
+				"src/duality/duality_main.cpp"
+			],
+			[
+				"gamecpp",
+				"src/game/game.cpp"
+			],
+			[
+				"game.h",
+				"src/game/game.h"
+			],
+			[
+				"gamh",
+				"src/game/game.h"
+			],
+			[
+				"dualityscene",
+				"src/duality/main_scene.h"
+			],
+			[
+				"dualcontroll",
+				"src/duality/controller.cpp"
+			],
+			[
+				"mainph",
+				"src/duality/mainpage.h"
+			],
+			[
+				"dual/page",
+				"src/duality/mainpage.cpp"
+			],
+			[
+				"git",
+				"GameEx/.metadata/.plugins/org.eclipse.core.resources/.projects/GameLand/org.eclipse.egit.core/GitProjectData.properties"
+			],
+			[
+				"",
+				"duality/controller.cpp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 127.0,
+		"selected_items":
+		[
+			[
+				"SsZ",
+				"SshZebraConnection"
+			],
+			[
+				"InstS",
+				"InstallationSpecification"
+			],
+			[
+				"Ssh",
+				"SshZebraConnection"
+			]
+		],
+		"width": 392.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 270.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
