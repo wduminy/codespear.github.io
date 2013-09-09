@@ -76,35 +76,14 @@
 	"buffers":
 	[
 		{
-			"file": "_posts/2013-08-11-first-impressions.md",
+			"contents": "---\nlayout: post\ncategory: graphics\ntags: [C++,make]\nexcerpt: Notable features of GNU make  \n---\nThe need for something to help with the compile process has been long recognised.  Few can disagree that the [`make`](http://www.gnu.org/software/make/manual/make.html) command line utility was a ground breaker in its day.  The availability of alternatives leaves one with the impression that this program does not fit the bill for today's software. This assumption is far from the truth. \n\nIf you disagree you may not have given `make` enough of your time to prove itself. Clearly there are features that make other builder more attractive for a given purpose; but sometimes `make` would do the job just fine.  It is after all very stable and available *by default* on many platforms.  \n\nI do not want to create an introductory post. Search no further than the [good articles by Alex Allain](http://www.cprogramming.com/tutorial/makefiles_continued.html) to get an idea of what it's all about. Then there is always the complete [`make` manual](http://www.gnu.org/software/make/manual/make.html) - really an excellent reference.\n\nWhat I want to show you is a real world example of how `make` can be used to build a C++ program. The listing below is an early version of the [GameEx](https://github.com/codespear/GameEx) *makefile*.  This project has sources in multiple directories and consists of [static libraries](http://en.wikipedia.org/wiki/Static_library) and executable programs that use those libraries.   Although I use  [MinGW](http://www.mingw.org/),  the listed *makefile* would also work in *linux*.  But the idea of this post is not to write a portable *makefile*, but simply to demonstrate some features of the `make` program.\n\n{%highlight makefile linenos%}\nTARGET_DIR = RunDir\nCOMPILE_ARGS = -I\"SDL-1.2.15\\include\" -ITutLib -IGameLandLib -O3 -Wall -c -fmessage-length=0 -std=c++0x\nLINK_ARGS = -L\"SDL-1.2.15\\lib\" -L$(TARGET_DIR) -lmingw32 -lwsock32 -lglu32 -lopengl32 -lSDLmain -lSDL_ttf -lSDL.dll \nDIRS = GameLandLib GameLandTests TutLib TerrainDemo Sneaky\nSOURCES := $(foreach e, $(DIRS), $(wildcard $(e)/*.cpp))\nDEPS := $(patsubst %.cpp, %.depends, $(SOURCES))\nOBJS := $(patsubst %.cpp, %.o, $(SOURCES))\nGAME_LAND_LIB := $(TARGET_DIR)/libGameLandLib.a\nTUT_LIB := $(TARGET_DIR)/libTutLib.a\nGAME_LAND_TEST := $(TARGET_DIR)/GameLandTests.exe\nTERRAIN_DEMO := $(TARGET_DIR)/TerrainDemo.exe\nSNEAKY := $(TARGET_DIR)/Sneaky.exe\n.PHONY : clean all run_sneaky run_terrain run_test \n\nrun_sneaky: $(SNEAKY)\n	cd $(TARGET_DIR); ./Sneaky.exe\n\n$(SNEAKY): $(OBJS) $(GAME_LAND_LIB)\n	g++ $(wildcard Sneaky/*.o) -o $@ -lGameLandLib $(LINK_ARGS)  \n\nrun_terrain: $(TERRAIN_DEMO)\n	cd $(TARGET_DIR); ./TerrainDemo.exe\n\n$(TERRAIN_DEMO): $(OBJS) $(GAME_LAND_LIB)\n	g++ $(wildcard TerrainDemo/*.o) -o $@ -lGameLandLib $(LINK_ARGS)  \n\nrun_tests:  $(GAME_LAND_TEST)\n	cd $(TARGET_DIR); ./GameLandTests.exe\n\n$(GAME_LAND_TEST): $(OBJS) $(TUT_LIB) \n	g++ $(wildcard GameLandTests/*.o) -o $@ -lGameLandLib -lTutLib $(LINK_ARGS)  \n\n$(GAME_LAND_LIB): $(OBJS)\n	ar -r $@ $(wildcard GameLandLib/*.o)\n\n$(TUT_LIB): $(GAME_LAND_LIB) 	\n	ar -r $@ $(wildcard TutLib/*.o)\n\nclean:\n	rm -f $(foreach e, $(DIRS), $(wildcard $(e)/*.depends-)) $(foreach e, $(DIRS), $(wildcard $(e)/*.o))\n\n%.o: %.cpp \n	g++ $(COMPILE_ARGS) -c $< -o $@\n\n%.depends: %.cpp\n	g++ -M $(COMPILE_ARGS) $< > $@\n\n-include $(DEPS)\n{%endhighlight%}\n\nFrom the listing you can see the use of *macros* and *target definitions*.  On line 5 I make use of [the `foreach` function](http://www.gnu.org/software/make/manual/make.html#Foreach-Function) to make a list of all the `cpp` files in the given `DIRS`.  Note that there is no need to explicitly list the files that must be compiled. The macros in line 6 and 7 uses `patsubst` function used in line 6 and 7 to create useful target lists from the list of `cpp` files.   \n\nYou will also notice that I did not list the dependencies of the source files.  For this I use the `g++ -M` flag (on line 46).  This target definition generates a `.depends` from a `.cpp` file.  Note that the last line in the *makefile* has the effect to include all the generated `.depends` files into the `make` definition.\n\nThis file could make use of more macros, but it is sometimes wise to keep things readable - even if there is a bit of duplication. Apparently [recursive makefiles are harmful](http://miller.emu.id.au/pmiller/books/rmch/): this *makefile* show how simple it is to build sources from more than one directory.\n\nThat wraps it up.  Hope you know about more now about *making* source code.         \n",
+			"file": "_drafts/2013-09-09-notable-make-features.md",
+			"file_size": 4642,
+			"file_write_time": 130232192762553169,
 			"settings":
 			{
-				"buffer_size": 1804,
+				"buffer_size": 4570,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "_drafts/draft.md",
-			"settings":
-			{
-				"buffer_size": 297,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "_posts/2013-08-18-terrain-rendering-with-GLSL.md",
-			"settings":
-			{
-				"buffer_size": 2740,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "codespear.sublime-project",
-			"settings":
-			{
-				"buffer_size": 170,
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -218,19 +197,28 @@
 	},
 	"file_history":
 	[
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_drafts/draft.md",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_posts/2013-07-02-heightmap-from-concept-to-template.md",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_drafts/terrain-lighting-opengl.md",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_drafts/render-blender-model.md",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_drafts/car-racing-game.md",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_drafts/writing-game-music.md",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_posts/2013-08-18-terrain-rendering-with-GLSL.md",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_drafts/heightmap-from-concept-to-template.md",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_posts/2013-08-11-first-impressions.md",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/serve.cmd",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_includes/JB/comments-providers/intensedebate",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/codespear.sublime-project",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_drafts/terrain-lighting-opengl",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_drafts/terrain-rendering-with-GLSL.md",
 		"/G/my_stuff.md",
-		"/C/Users/willemd/Documents/GitHub/codespear.github.io/codespear.sublime-project",
 		"/C/Users/willemd/AppData/Roaming/Sublime Text 3/Packages/SmartMarkdown/Default.sublime-keymap",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_drafts/terrain-rendering-with-glsl.md",
 		"/G//my_stuff.md",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/assets/themes/twitter/css/style.css",
-		"/C/Users/willemd/Documents/GitHub/codespear.github.io/serve.cmd",
-		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_posts/2013-08-11-first-impressions.md",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_includes/themes/twitter/default.html",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/assets/css/pygment.css",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/css/pygments.css",
-		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_drafts/draft.md",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_config.yml",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/pages.html",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_layouts/post.html",
@@ -341,6 +329,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"php",
 			">\n",
 			"ID",
 			"\">\n",
@@ -441,110 +430,29 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "_posts/2013-08-11-first-impressions.md",
+					"file": "_drafts/2013-09-09-notable-make-features.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1804,
+						"buffer_size": 4570,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								108,
-								108
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "_drafts/draft.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 297,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								109,
-								109
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "_posts/2013-08-18-terrain-rendering-with-GLSL.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2740,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								115,
-								115
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 744.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "codespear.sublime-project",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 170,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								37,
-								37
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -602,6 +510,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"light",
+				"_drafts\\terrain-lighting-opengl.md"
+			],
+			[
+				"update",
+				"_includes\\JB\\comments-providers\\intensedebate"
+			],
 			[
 				"hpolic",
 				"SAL330RGEFDemoApplication\\src\\com\\ibm\\itso\\sal330r\\gefdemo\\edit\\CompoundHighlightEditPolicy.java"
@@ -671,11 +587,15 @@
 	},
 	"select_project":
 	{
-		"height": 500.0,
+		"height": 625.0,
 		"selected_items":
 		[
+			[
+				"",
+				"C:\\Users\\willemd\\Documents\\GitHub\\GameEx\\gameex.sublime-project"
+			]
 		],
-		"width": 380.0
+		"width": 475.0
 	},
 	"select_symbol":
 	{
@@ -704,7 +624,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 270.0,
+	"side_bar_width": 372.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

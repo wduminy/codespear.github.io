@@ -9,7 +9,7 @@ Getting this site up and running was easy. But, I had to go fiddle here and twea
 
 I decided to create accounts on [google analytics](http://www.google.com/analytics/) and [disqus](http://codespear.disqus.com/).  _Disqus_ is new to me, but it looks quite interesting.  
 
-Other cool things I hope to learn more about is [jekyll](http://jekyllrb.com/), [markdown](http://daringfireball.net/projects/markdown/) and [liquid](http://liquidmarkup.org/).
+Other cool things I hope to learn more about is [jekyll](http://jekyllrb.com/), [markdown](http://daringfireball.net/projects/markdown/syntax) and [liquid](http://liquidmarkup.org/).
 
 Strictly it is not required, but I thought it would be nice to host the site locally. Because I am running on Windows, this could be complicated. However Madhur Ahuja saved me a lot of time with his [solution](http://www.madhur.co.in/blog/2013/07/20/buildportablejekyll.html). After downloading the [dropbox](https://www.dropbox.com/) file, it all works great.
 

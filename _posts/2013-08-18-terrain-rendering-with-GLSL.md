@@ -1,6 +1,6 @@
 ---
 layout: post
-category: rambling
+category: graphics
 tags: [GLSL,terrain]
 excerpt: Use GLSL to render a terrain with weighted colors.
 ---

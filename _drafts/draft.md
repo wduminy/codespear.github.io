@@ -12,3 +12,5 @@ def foo
   puts 'foo'
 end
 {% endhighlight %}
+
+[code highlighting](http://thanpol.as/jekyll/jekyll-code-highlight-and-line-numbers-problem-solved/)
