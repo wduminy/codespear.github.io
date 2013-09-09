@@ -69,4 +69,4 @@ You will also notice that I did not list the dependencies of the source files.  
 
 This file could make use of more macros, but it is sometimes wise to keep things readable - even if there is a bit of duplication. Apparently [recursive makefiles are harmful](http://miller.emu.id.au/pmiller/books/rmch/): this *makefile* show how simple it is to build sources from more than one directory.
 
-That wraps it up.  Hope you know about more now about *making* source code.         
+That wraps it up.  Hope you now know a bit more about *making* source code.         
