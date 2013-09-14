@@ -10,5 +10,5 @@ tagline: ramblings, rants and other stuff
   {% endfor %}
 </ul>
 
-
+Also here: [The GameEx Documentation](/gameex/html/)
 
