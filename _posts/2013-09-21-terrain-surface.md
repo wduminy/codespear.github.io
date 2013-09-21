@@ -90,7 +90,6 @@ void draw(const game::DrawContext& dc) override {
 	auto ne = floor_north_east();
 	const int steps = 200;
 	auto inc = (sw - ne) / (steps * 1.0f);
-	LOG << sw << " -> " << ne << ": " << inc;
 	glBegin(GL_LINES); 
 	for (int i=0;i<steps;i++) {
 		auto vi = ne + (inc*i);
