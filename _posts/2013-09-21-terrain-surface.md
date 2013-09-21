@@ -32,8 +32,8 @@ Triangle find(float c, float r) {
 			return new Triangle(point(fc,fr),point(fc+1,fr),
 				point(fc+1,fr+1));
 		} else 
-			return new Triangle(point(fc+1,fr+1),point(fc,fr),
-				point(fc,fr+1));
+			return new Triangle(point(fc,fr+1),point(fc,fr),
+				point(fc+1,fr+1));
 		}
 	}
 }
@@ -41,7 +41,6 @@ Triangle find(float c, float r) {
 Vector point(int c, int r) {
 	return new Vector(c,r,height_at(c,r));
 }
-
 {% endhighlight %}
 
 ## Step 2: Point of intersection
