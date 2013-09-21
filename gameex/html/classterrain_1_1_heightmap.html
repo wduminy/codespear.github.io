@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -80,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>terrain</b></li><li class="navelem"><a class="el" href="classterrain_1_1_heightmap.html">Heightmap</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceterrain.html">terrain</a></li><li class="navelem"><a class="el" href="classterrain_1_1_heightmap.html">Heightmap</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -100,6 +100,9 @@ Public Types</h2></td></tr>
 <tr class="memitem:a5eb9fbd7bac4bbb0b5dc0ceacb724a51"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5eb9fbd7bac4bbb0b5dc0ceacb724a51"></a>
 typedef std::array&lt; elemT, <br class="typebreak"/>
 n_rows *m_columns &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>container_t</b></td></tr>
+<tr class="memitem:a86632ea3dc9495dc577adeb19ff48a41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86632ea3dc9495dc577adeb19ff48a41"></a>
+typedef std::function&lt; void(size_t <br class="typebreak"/>
+c, size_t r, elemT h)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>triangle_fun_t</b></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -123,28 +126,147 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size_traverse_trian
 elemT&#160;</td><td class="memItemRight" valign="bottom"><b>max_height</b> () const </td></tr>
 <tr class="memitem:a406cd60e5a23c8aefbb9214358bff475"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a406cd60e5a23c8aefbb9214358bff475"></a>
 elemT&#160;</td><td class="memItemRight" valign="bottom"><b>min_height</b> () const </td></tr>
-<tr class="memitem:a5963c149ae1b9f886cc3688b29b7145c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5963c149ae1b9f886cc3688b29b7145c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>traverse</b> (std::function&lt; void(int c, int r, elemT h)&gt; applyF) const </td></tr>
-<tr class="memitem:ae24679dbd6f5e774c8d33a2d1f4ee616"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae24679dbd6f5e774c8d33a2d1f4ee616"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>traverse_triangles</b> (std::function&lt; void(int c, int r, elemT h)&gt; applyF) const </td></tr>
+<tr class="memitem:ab17791438539bd27fb110ed998a0239b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classterrain_1_1_heightmap.html#ab17791438539bd27fb110ed998a0239b">traverse</a> (triangle_fun_t applyF) const </td></tr>
+<tr class="memdesc:ab17791438539bd27fb110ed998a0239b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a function for each vertex in the heightmap.  <a href="#ab17791438539bd27fb110ed998a0239b"></a><br/></td></tr>
+<tr class="memitem:a8144739bc713d39d4700e9978814ae23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classterrain_1_1_heightmap.html#a8144739bc713d39d4700e9978814ae23">traverse_triangles</a> (triangle_fun_t applyF) const </td></tr>
+<tr class="memdesc:a8144739bc713d39d4700e9978814ae23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a function that helps with the rendering of a triangle strip.  <a href="#a8144739bc713d39d4700e9978814ae23"></a><br/></td></tr>
+<tr class="memitem:a815b6cbdbcc2b9366bb236cf69309b47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classterrain_1_1_heightmap.html#a815b6cbdbcc2b9366bb236cf69309b47">apply_triangle</a> (const Scalar c, const Scalar r, triangle_fun_t applyF) const </td></tr>
+<tr class="memdesc:a815b6cbdbcc2b9366bb236cf69309b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a function for each vertex in the triangle that contains given coordinates.  <a href="#a815b6cbdbcc2b9366bb236cf69309b47"></a><br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:ad2bed3af27901befdb92de37c7175f55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2bed3af27901befdb92de37c7175f55"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>check_range</b> (size_t c, size_t r) const </td></tr>
+<tr class="memitem:abee8107e4c088dbe5b4f926568559c7f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abee8107e4c088dbe5b4f926568559c7f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (triangle_fun_t applyF, size_t c, size_t r) const </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ab4cf43b92ea36770fdb7c2d6689acbb3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4cf43b92ea36770fdb7c2d6689acbb3"></a>
 container_t&#160;</td><td class="memItemRight" valign="bottom"><b>_elems</b></td></tr>
 </table>
+<h2>Member Function Documentation</h2>
+<a class="anchor" id="a815b6cbdbcc2b9366bb236cf69309b47"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename elemT, size_t m_columns, size_t n_rows&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classterrain_1_1_heightmap.html">terrain::Heightmap</a>&lt; elemT, m_columns, n_rows &gt;::apply_triangle </td>
+          <td>(</td>
+          <td class="paramtype">const Scalar&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Scalar&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">triangle_fun_t&#160;</td>
+          <td class="paramname"><em>applyF</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calls a function for each vertex in the triangle that contains given coordinates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c,r</td><td>the coordinates somewhere in the range (0..m_columns, 0...n_rows) </td></tr>
+    <tr><td class="paramname">applyF</td><td>the function that will be called three times </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab17791438539bd27fb110ed998a0239b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename elemT, size_t m_columns, size_t n_rows&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classterrain_1_1_heightmap.html">terrain::Heightmap</a>&lt; elemT, m_columns, n_rows &gt;::traverse </td>
+          <td>(</td>
+          <td class="paramtype">triangle_fun_t&#160;</td>
+          <td class="paramname"><em>applyF</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calls a function for each vertex in the heightmap. </p>
+<p>The order is (0,0) (0,1) etc. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8144739bc713d39d4700e9978814ae23"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename elemT, size_t m_columns, size_t n_rows&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classterrain_1_1_heightmap.html">terrain::Heightmap</a>&lt; elemT, m_columns, n_rows &gt;::traverse_triangles </td>
+          <td>(</td>
+          <td class="paramtype">triangle_fun_t&#160;</td>
+          <td class="paramname"><em>applyF</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calls a function that helps with the rendering of a triangle strip. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">applyF</td><td>the function that is called. applyF(-1,-1,0) indicates the end of a strip. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>heightmap.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 14 2013 12:51:05 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 21 2013 14:26:49 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

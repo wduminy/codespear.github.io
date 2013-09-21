@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -94,6 +94,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>If a collidable is updated, the collision manager must be told about it.  
+ <a href="classgame_1_1_collidable_polygon.html#details">More...</a></p>
+
 <p><code>#include &lt;collisions2d.h&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for game::CollidablePolygon:</div>
@@ -101,8 +104,8 @@ Inheritance diagram for game::CollidablePolygon:</div>
  <div class="center">
   <img src="classgame_1_1_collidable_polygon.png" usemap="#game::CollidablePolygon_map" alt=""/>
   <map id="game::CollidablePolygon_map" name="game::CollidablePolygon_map">
-<area href="classgame_1_1_bounded_box2.html" alt="game::BoundedBox2" shape="rect" coords="0,0,150,24"/>
-<area href="classgame_1_1_polygon.html" alt="game::Polygon" shape="rect" coords="160,0,310,24"/>
+<area href="classgame_1_1_bounded_box2.html" title="A bounded box has a left-top and a right-bottom location." alt="game::BoundedBox2" shape="rect" coords="0,0,150,24"/>
+<area href="classgame_1_1_polygon.html" title="A two dimensional figure with at least one point." alt="game::Polygon" shape="rect" coords="160,0,310,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -153,7 +156,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_start</b> (const 
 <tr class="memitem:a6cb92d06c82715e38d90fee51c1f8732 inherit pub_methods_classgame_1_1_polygon"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6cb92d06c82715e38d90fee51c1f8732"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>add_relative</b> (const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;value)</td></tr>
 <tr class="memitem:a4f70ce436939794336e1dc30f7221729 inherit pub_methods_classgame_1_1_polygon"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_polygon.html#a4f70ce436939794336e1dc30f7221729">overlaps_with</a> (const <a class="el" href="classgame_1_1_polygon.html">Polygon</a> &amp;other) const </td></tr>
+<tr class="memdesc:a4f70ce436939794336e1dc30f7221729 inherit pub_methods_classgame_1_1_polygon"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method assumes both polygons are convex.  <a href="#a4f70ce436939794336e1dc30f7221729"></a><br/></td></tr>
 <tr class="memitem:aa793ea2806463c37c430b140c20937f1 inherit pub_methods_classgame_1_1_polygon"><td class="memItemLeft" align="right" valign="top">list&lt; <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_polygon.html#aa793ea2806463c37c430b140c20937f1">axes</a> () const </td></tr>
+<tr class="memdesc:aa793ea2806463c37c430b140c20937f1 inherit pub_methods_classgame_1_1_polygon"><td class="mdescLeft">&#160;</td><td class="mdescRight">The axis are the normals for each edge in the polygon.  <a href="#aa793ea2806463c37c430b140c20937f1"></a><br/></td></tr>
 <tr class="memitem:a99fd7922cf40bbc30511a2a3c083ded6 inherit pub_methods_classgame_1_1_polygon"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99fd7922cf40bbc30511a2a3c083ded6"></a>
 <a class="el" href="classgame_1_1_range.html">Range</a>&#160;</td><td class="memItemRight" valign="bottom"><b>project</b> (const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;axis) const </td></tr>
 <tr class="memitem:a5fb9466c2fae41c8bfd27996da2f083e inherit pub_methods_classgame_1_1_polygon"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5fb9466c2fae41c8bfd27996da2f083e"></a>
@@ -176,7 +181,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>adjust_box</b> (const
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clear_box</b> ()</td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>If a collidable is updated, the collision manager must be told about it </p>
+<div class="textblock"><p>If a collidable is updated, the collision manager must be told about it. </p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>collisions2d.h</li>
 <li>collisions2d.cpp</li>
@@ -184,7 +189,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clear_box</b> ()</td>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 14 2013 12:51:05 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 21 2013 14:26:49 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

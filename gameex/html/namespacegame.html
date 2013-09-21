@@ -59,6 +59,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="namespaces.html"><span>Namespace&#160;List</span></a></li>
+      <li><a href="namespacemembers.html"><span>Namespace&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -66,7 +67,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -86,12 +87,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">game Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Copyright 2013 Willem Duminy See LICENCE.txt.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_bounded_box2.html">BoundedBox2</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A bounded box has a left-top and a right-bottom location.  <a href="classgame_1_1_bounded_box2.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_polygon.html">Polygon</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A two dimensional figure with at least one point.  <a href="classgame_1_1_polygon.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_collidable_polygon.html">CollidablePolygon</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a collidable is updated, the collision manager must be told about it.  <a href="classgame_1_1_collidable_polygon.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_collision_listener.html">CollisionListener</a></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_collidable_polygon_p_list.html">CollidablePolygonPList</a></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_collision_manager.html">CollisionManager</a></td></tr>
@@ -106,20 +113,27 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_draw_context.html">DrawContext</a></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_drawable.html">Drawable</a></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_game_object.html">GameObject</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this as base class for all objects that are updated and drawn in your game.  <a href="classgame_1_1_game_object.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_game_object_with_parts.html">GameObjectWithParts</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this as base class for <a class="el" href="classgame_1_1_game_object.html" title="Use this as base class for all objects that are updated and drawn in your game.">GameObject</a> instances that contain other GameObjects.  <a href="classgame_1_1_game_object_with_parts.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_game_object_chain_link.html">GameObjectChainLink</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this as base when you have a chain of <a class="el" href="classgame_1_1_game_object_with_parts.html" title="Use this as base class for GameObject instances that contain other GameObjects.">GameObjectWithParts</a> such that only one object in the chain is active at a time.  <a href="classgame_1_1_game_object_chain_link.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_main_object.html">MainObject</a></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_game.html">Game</a></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_range.html">Range</a></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_scalar_value_array.html">ScalarValueArray</a></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_vector2.html">Vector2</a></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_vector.html">Vector</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A value in 3D space.  <a href="classgame_1_1_vector.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_matrix_op.html">MatrixOp</a></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_matrix.html">Matrix</a></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_count_down_counter.html">CountDownCounter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An cyclic integer counter that counts down from a starting value to 1.  <a href="classgame_1_1_count_down_counter.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_rotate_int.html">RotateInt</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer that 'rotates' from 0 to maxValue.  <a href="classgame_1_1_rotate_int.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_triangle_strip.html">TriangleStrip</a></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_panel.html">Panel</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Panels are drawn on screen.  <a href="classgame_1_1_panel.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_sphere_camera.html">SphereCamera</a></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_glex.html">Glex</a></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_texture.html">Texture</a></td></tr>
@@ -135,8 +149,8 @@ typedef std::unique_ptr<br class="typebreak"/>
 &lt; SDL_Surface &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>SDL_Surface_u_ptr</b></td></tr>
 <tr class="memitem:a69b9bae49a7049b98d45285648a46a7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69b9bae49a7049b98d45285648a46a7b"></a>
 typedef GLfloat&#160;</td><td class="memItemRight" valign="bottom"><b>Scalar</b></td></tr>
-<tr class="memitem:a6d9f288b1f2804b06c62d91f37f3b787"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d9f288b1f2804b06c62d91f37f3b787"></a>
-typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>Byte</b></td></tr>
+<tr class="memitem:a6d9f288b1f2804b06c62d91f37f3b787"><td class="memItemLeft" align="right" valign="top">typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegame.html#a6d9f288b1f2804b06c62d91f37f3b787">Byte</a></td></tr>
+<tr class="memdesc:a6d9f288b1f2804b06c62d91f37f3b787"><td class="mdescLeft">&#160;</td><td class="mdescRight">type for 8-bit values.  <a href="#a6d9f288b1f2804b06c62d91f37f3b787"></a><br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -202,12 +216,16 @@ ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;
 <a class="el" href="classgame_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;a, const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;b)</td></tr>
 <tr class="memitem:ad2bee7858ae5ddc28c84896cd25d9bdb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2bee7858ae5ddc28c84896cd25d9bdb"></a>
 <a class="el" href="classgame_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;a, const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;b)</td></tr>
-<tr class="memitem:afadffdcd5236babbea70f06ec9bd0de4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afadffdcd5236babbea70f06ec9bd0de4"></a>
-<a class="el" href="classgame_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;a, const Scalar &amp;b)</td></tr>
+<tr class="memitem:a6994b71dee802c11df6b27ab77db27ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6994b71dee802c11df6b27ab77db27ba"></a>
+<a class="el" href="classgame_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;a, const Scalar b)</td></tr>
+<tr class="memitem:a53388aaa72fe7d037129bd780e8b08f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53388aaa72fe7d037129bd780e8b08f0"></a>
+<a class="el" href="classgame_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;a, const Scalar b)</td></tr>
 <tr class="memitem:af48e79b03881c0fb41b22219c008854f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af48e79b03881c0fb41b22219c008854f"></a>
 Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>dot</b> (const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;a, const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;b)</td></tr>
 <tr class="memitem:a5a64b01d5ef478f0fed08add473795eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a64b01d5ef478f0fed08add473795eb"></a>
 <a class="el" href="classgame_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cross_product</b> (const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;a, const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;b)</td></tr>
+<tr class="memitem:aa772aa3e9b97b22c904b70768b41d26c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgame_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegame.html#aa772aa3e9b97b22c904b70768b41d26c">plane_point</a> (const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;a, const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;b, const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;c, const Scalar x, const Scalar y)</td></tr>
+<tr class="memdesc:aa772aa3e9b97b22c904b70768b41d26c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the point in a plane that intersects with a vertical line.  <a href="#aa772aa3e9b97b22c904b70768b41d26c"></a><br/></td></tr>
 <tr class="memitem:a604d5408cf900fa55d11643e9d288881"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a604d5408cf900fa55d11643e9d288881"></a>
 valarray&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>diagonal</b> (diagonals, 4)</td></tr>
 <tr class="memitem:acd38a153a3860d454b87c8dec32ef25e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd38a153a3860d454b87c8dec32ef25e"></a>
@@ -265,12 +283,81 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><b>diagonals</b>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>gl_initialised</b> = false</td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Copyright 2013 Willem Duminy See LICENCE.txt</p>
-<p>Copyright 2012 Willem Duminy See LICENCE.txt </p>
-</div></div><!-- contents -->
+<div class="textblock"><p>Copyright 2013 Willem Duminy See LICENCE.txt. </p>
+<p>Copyright 2012 Willem Duminy See LICENCE.txt. </p>
+</div><h2>Typedef Documentation</h2>
+<a class="anchor" id="a6d9f288b1f2804b06c62d91f37f3b787"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned char <a class="el" href="namespacegame.html#a6d9f288b1f2804b06c62d91f37f3b787">game::Byte</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>type for 8-bit values. </p>
+
+</div>
+</div>
+<h2>Function Documentation</h2>
+<a class="anchor" id="aa772aa3e9b97b22c904b70768b41d26c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgame_1_1_vector.html">Vector</a> game::plane_point </td>
+          <td>(</td>
+          <td class="paramtype">const Vector &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Vector &amp;&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Vector &amp;&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Scalar&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Scalar&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determines the point in a plane that intersects with a vertical line. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a,b,c</td><td>the points that defines the plane. </td></tr>
+    <tr><td class="paramname">x,y</td><td>the position through which the vertical line goes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 14 2013 12:51:05 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 21 2013 14:26:49 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,12 +96,13 @@ Inheritance diagram for game::Drawable:</div>
  <div class="center">
   <img src="classgame_1_1_drawable.png" usemap="#game::Drawable_map" alt=""/>
   <map id="game::Drawable_map" name="game::Drawable_map">
-<area href="classgame_1_1_game_object.html" alt="game::GameObject" shape="rect" coords="274,56,447,80"/>
-<area href="classgame_1_1_game_object_with_parts.html" alt="game::GameObjectWithParts" shape="rect" coords="91,112,264,136"/>
-<area href="classgame_1_1_panel.html" alt="game::Panel" shape="rect" coords="274,112,447,136"/>
-<area href="classgame_1_1_sphere_camera.html" alt="game::SphereCamera" shape="rect" coords="457,112,630,136"/>
-<area href="classgame_1_1_game_object_chain_link.html" alt="game::GameObjectChainLink" shape="rect" coords="0,168,173,192"/>
-<area href="classgame_1_1_main_object.html" alt="game::MainObject" shape="rect" coords="183,168,356,192"/>
+<area href="classgame_1_1_game_object.html" title="Use this as base class for all objects that are updated and drawn in your game." alt="game::GameObject" shape="rect" coords="708,56,1052,80"/>
+<area href="classgame_1_1_game_object_with_parts.html" title="Use this as base class for GameObject instances that contain other GameObjects." alt="game::GameObjectWithParts" shape="rect" coords="177,112,521,136"/>
+<area href="classgame_1_1_panel.html" title="Panels are drawn on screen." alt="game::Panel" shape="rect" coords="531,112,875,136"/>
+<area href="classgame_1_1_sphere_camera.html" alt="game::SphereCamera" shape="rect" coords="885,112,1229,136"/>
+<area href="classterrain_1_1_terrain_object.html" title="A GameObject that renders a heightmap." alt="terrain::TerrainObject&lt; elemT, heightmapT, transformerT &gt;" shape="rect" coords="1239,112,1583,136"/>
+<area href="classgame_1_1_game_object_chain_link.html" title="Use this as base when you have a chain of GameObjectWithParts such that only one object in the chain ..." alt="game::GameObjectChainLink" shape="rect" coords="0,168,344,192"/>
+<area href="classgame_1_1_main_object.html" alt="game::MainObject" shape="rect" coords="354,168,698,192"/>
 </map>
  </div></div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -110,7 +111,7 @@ Inheritance diagram for game::Drawable:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 14 2013 12:51:05 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 21 2013 14:26:49 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

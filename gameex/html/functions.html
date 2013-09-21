@@ -68,16 +68,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li class="current"><a href="functions.html"><span>All</span></a></li>
       <li><a href="functions_func.html"><span>Functions</span></a></li>
+      <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
       <li><a href="#index_a"><span>a</span></a></li>
       <li><a href="#index_d"><span>d</span></a></li>
+      <li><a href="#index_f"><span>f</span></a></li>
       <li><a href="#index_g"><span>g</span></a></li>
       <li><a href="#index_i"><span>i</span></a></li>
       <li><a href="#index_k"><span>k</span></a></li>
       <li><a href="#index_l"><span>l</span></a></li>
+      <li><a href="#index_n"><span>n</span></a></li>
       <li><a href="#index_o"><span>o</span></a></li>
       <li><a href="#index_p"><span>p</span></a></li>
       <li><a href="#index_r"><span>r</span></a></li>
@@ -92,7 +95,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,6 +114,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>add_part()
 : <a class="el" href="classgame_1_1_game_object_with_parts.html#a6d479fe828759454ed980f9ab2d45927">game::GameObjectWithParts</a>
 </li>
+<li>apply_triangle()
+: <a class="el" href="classterrain_1_1_heightmap.html#a815b6cbdbcc2b9366bb236cf69309b47">terrain::Heightmap&lt; elemT, m_columns, n_rows &gt;</a>
+</li>
 <li>axes()
 : <a class="el" href="classgame_1_1_polygon.html#aa793ea2806463c37c430b140c20937f1">game::Polygon</a>
 </li>
@@ -122,11 +128,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classgame_1_1_game_object.html#a87b55f525838e7bb493e72475e9b73e7">game::GameObject</a>
 </li>
 <li>draw()
-: <a class="el" href="classgame_1_1_sphere_camera.html#a20d73f7b2597c19f3216121311e485ae">game::SphereCamera</a>
+: <a class="el" href="classterrain_1_1_terrain_object.html#a105618577665210b063dbd8207bfe827">terrain::TerrainObject&lt; elemT, heightmapT, transformerT &gt;</a>
+, <a class="el" href="classgame_1_1_sphere_camera.html#a20d73f7b2597c19f3216121311e485ae">game::SphereCamera</a>
 , <a class="el" href="classgame_1_1_panel.html#ad3e5c185123033e3d955080fd1bf7cc2">game::Panel</a>
 , <a class="el" href="classgame_1_1_main_object.html#a5f5a6ae6e50bdf467bda11320d9ee67e">game::MainObject</a>
 , <a class="el" href="classgame_1_1_game_object_with_parts.html#a15f9176466d28592e7bc3503169b569d">game::GameObjectWithParts</a>
 , <a class="el" href="classgame_1_1_game_object.html#a2b4f9dd1c722e671afb6132f74c898a8">game::GameObject</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
+<li>floor_at()
+: <a class="el" href="classterrain_1_1_terrain_object.html#a49418a32114958a8445632fbd5c54c62">terrain::TerrainObject&lt; elemT, heightmapT, transformerT &gt;</a>
+</li>
+<li>floor_north_east()
+: <a class="el" href="classterrain_1_1_terrain_object.html#a1a6f48d57729184f7f17fce82c1eb0f0">terrain::TerrainObject&lt; elemT, heightmapT, transformerT &gt;</a>
+</li>
+<li>floor_south_west()
+: <a class="el" href="classterrain_1_1_terrain_object.html#ab1a75a9e1bc81d52aa9d76fd8673ac25">terrain::TerrainObject&lt; elemT, heightmapT, transformerT &gt;</a>
 </li>
 </ul>
 
@@ -143,6 +163,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classgame_1_1_game_object.html#a918a3283c1fdeae844d256b415679ceb">game::GameObject</a>
 , <a class="el" href="classgame_1_1_game_object_with_parts.html#a98cdcc055bf6f84dd773e16be1afdffb">game::GameObjectWithParts</a>
 , <a class="el" href="classgame_1_1_panel.html#aa04f020a62f27c4f8eaf4c7ebb0b7780">game::Panel</a>
+, <a class="el" href="classterrain_1_1_terrain_object.html#ab5132db7b85ad1d65ba2e52efe8fadae">terrain::TerrainObject&lt; elemT, heightmapT, transformerT &gt;</a>
 , <a class="el" href="classgame_1_1_main_object.html#a0193594e6b5493c9c44f9b37f11ae4a1">game::MainObject</a>
 </li>
 <li>is_ctl_down()
@@ -174,6 +195,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </ul>
 
 
+<h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
+<li>normalise()
+: <a class="el" href="classterrain_1_1_heightmap_with_byte.html#a7ab13b5a23f3e5c91bb6091d4b3b68f7">terrain::HeightmapWithByte&lt; m_columns, n_rows &gt;</a>
+</li>
+</ul>
+
+
 <h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
 <li>overlaps_with()
 : <a class="el" href="classgame_1_1_polygon.html#a4f70ce436939794336e1dc30f7221729">game::Polygon</a>
@@ -184,6 +212,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
 <li>Panel()
 : <a class="el" href="classgame_1_1_panel.html#a5296266794bc0d4c7a02497bcf905982">game::Panel</a>
+</li>
+<li>plane_point
+: <a class="el" href="classgame_1_1_vector.html#ac845ca2f15fff51c6f68a006f0741d26">game::Vector</a>
 </li>
 <li>poll()
 : <a class="el" href="classgame_1_1_input_event.html#a7acc5fc0cce1e20cd30381ac46d035ff">game::InputEvent</a>
@@ -218,6 +249,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>tick()
 : <a class="el" href="classgame_1_1_count_down_counter.html#ab28176ecbbc25a136847ee142d62bb18">game::CountDownCounter</a>
 </li>
+<li>traverse()
+: <a class="el" href="classterrain_1_1_heightmap.html#ab17791438539bd27fb110ed998a0239b">terrain::Heightmap&lt; elemT, m_columns, n_rows &gt;</a>
+</li>
+<li>traverse_triangles()
+: <a class="el" href="classterrain_1_1_heightmap.html#a8144739bc713d39d4700e9978814ae23">terrain::Heightmap&lt; elemT, m_columns, n_rows &gt;</a>
+</li>
 </ul>
 
 
@@ -235,7 +272,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 14 2013 12:51:05 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 21 2013 14:26:49 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

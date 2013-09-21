@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,29 +96,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2bf5dad219a0f1d63c7bf041c8edb998"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2bf5dad219a0f1d63c7bf041c8edb998"></a>
 const SDL_Event &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>event</b> () const </td></tr>
-<tr class="memitem:af947642ba18d0991da0f4ed33062dd88"><td class="memItemLeft" align="right" valign="top">SDLKey&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_input_event.html#af947642ba18d0991da0f4ed33062dd88">key_down</a> () const </td></tr>
-<tr class="memitem:a7fc5fc050dacdcdbc7b4f351cda88165"><td class="memItemLeft" align="right" valign="top">SDLKey&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_input_event.html#a7fc5fc050dacdcdbc7b4f351cda88165">key_up</a> () const </td></tr>
-<tr class="memitem:a0c8ea8ad21c1033b65d0806f5f0bbe4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_input_event.html#a0c8ea8ad21c1033b65d0806f5f0bbe4b">is_ctl_down</a> () const </td></tr>
+<tr class="memitem:af947642ba18d0991da0f4ed33062dd88"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af947642ba18d0991da0f4ed33062dd88"></a>
+SDLKey&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_input_event.html#af947642ba18d0991da0f4ed33062dd88">key_down</a> () const </td></tr>
+<tr class="memdesc:af947642ba18d0991da0f4ed33062dd88"><td class="mdescLeft">&#160;</td><td class="mdescRight">The key that is pressed down. <br/></td></tr>
+<tr class="memitem:a7fc5fc050dacdcdbc7b4f351cda88165"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7fc5fc050dacdcdbc7b4f351cda88165"></a>
+SDLKey&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_input_event.html#a7fc5fc050dacdcdbc7b4f351cda88165">key_up</a> () const </td></tr>
+<tr class="memdesc:a7fc5fc050dacdcdbc7b4f351cda88165"><td class="mdescLeft">&#160;</td><td class="mdescRight">The key that has been released. <br/></td></tr>
+<tr class="memitem:a0c8ea8ad21c1033b65d0806f5f0bbe4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c8ea8ad21c1033b65d0806f5f0bbe4b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_input_event.html#a0c8ea8ad21c1033b65d0806f5f0bbe4b">is_ctl_down</a> () const </td></tr>
+<tr class="memdesc:a0c8ea8ad21c1033b65d0806f5f0bbe4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the control key pressed? <br/></td></tr>
 <tr class="memitem:a498841fb89724a5055b09dbd9fe40df7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_input_event.html#a498841fb89724a5055b09dbd9fe40df7">is_quit</a> () const </td></tr>
+<tr class="memdesc:a498841fb89724a5055b09dbd9fe40df7"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when the window is closed.  <a href="#a498841fb89724a5055b09dbd9fe40df7"></a><br/></td></tr>
 <tr class="memitem:a7acc5fc0cce1e20cd30381ac46d035ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_input_event.html#a7acc5fc0cce1e20cd30381ac46d035ff">poll</a> ()</td></tr>
+<tr class="memdesc:a7acc5fc0cce1e20cd30381ac46d035ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the event state.  <a href="#a7acc5fc0cce1e20cd30381ac46d035ff"></a><br/></td></tr>
 </table>
 <h2>Member Function Documentation</h2>
-<a class="anchor" id="a0c8ea8ad21c1033b65d0806f5f0bbe4b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool game::InputEvent::is_ctl_down </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Is the control key pressed? </p>
-
-</div>
-</div>
 <a class="anchor" id="a498841fb89724a5055b09dbd9fe40df7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -131,39 +123,9 @@ const SDL_Event &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>even
         </tr>
       </table>
 </div><div class="memdoc">
-<p>True when the window is closed. Used in the game loop. See SDL_QUIT for info. </p>
 
-</div>
-</div>
-<a class="anchor" id="af947642ba18d0991da0f4ed33062dd88"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">SDLKey game::InputEvent::key_down </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The key that is pressed down </p>
-
-</div>
-</div>
-<a class="anchor" id="a7fc5fc050dacdcdbc7b4f351cda88165"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">SDLKey game::InputEvent::key_up </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The key that has been released </p>
+<p>True when the window is closed. </p>
+<p>Used in the game loop. See SDL_QUIT for info. </p>
 
 </div>
 </div>
@@ -179,7 +141,9 @@ const SDL_Event &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>even
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Update the event state. Used in the game loop </p>
+
+<p>Update the event state. </p>
+<p>Used in the game loop </p>
 
 </div>
 </div>
@@ -190,7 +154,7 @@ const SDL_Event &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>even
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 14 2013 12:51:05 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 21 2013 14:26:49 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

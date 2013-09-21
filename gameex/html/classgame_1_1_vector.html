@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -93,6 +93,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">game::Vector Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A value in 3D space.  
+ <a href="classgame_1_1_vector.html#details">More...</a></p>
 
 <p><code>#include &lt;game_math.h&gt;</code></p>
 <div class="dynheader">
@@ -118,6 +121,8 @@ Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>z</b> () const </td
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_z</b> (Scalar v)</td></tr>
 <tr class="memitem:abc82c489cf0adb70fab527a798c299a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc82c489cf0adb70fab527a798c299a7"></a>
 Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>norm</b> () const override</td></tr>
+<tr class="memitem:a0c5fd752eb598dda37e174a14083100b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c5fd752eb598dda37e174a14083100b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>assign</b> (const Scalar x, const Scalar y, const Scalar z)</td></tr>
 <tr class="inherit_header pub_methods_classgame_1_1_vector2"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgame_1_1_vector2')"><img src="closed.png" alt="-"/>&nbsp;Public Member Functions inherited from <a class="el" href="classgame_1_1_vector2.html">game::Vector2</a></td></tr>
 <tr class="memitem:ab710ece4c2d68eb7a59768dc7a49cfcc inherit pub_methods_classgame_1_1_vector2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab710ece4c2d68eb7a59768dc7a49cfcc"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Vector2</b> (Scalar x, Scalar y)</td></tr>
@@ -177,12 +182,16 @@ Friends</h2></td></tr>
 <a class="el" href="classgame_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;a, const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;b)</td></tr>
 <tr class="memitem:a316d381a8ae7de1d299f2131a042a349"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a316d381a8ae7de1d299f2131a042a349"></a>
 <a class="el" href="classgame_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;a, const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;b)</td></tr>
-<tr class="memitem:a7fc030c7c46f66edfacdc7efac8fadac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7fc030c7c46f66edfacdc7efac8fadac"></a>
-<a class="el" href="classgame_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;a, const Scalar &amp;b)</td></tr>
+<tr class="memitem:abad6badc7ec99612800d6f8b7bd8476e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abad6badc7ec99612800d6f8b7bd8476e"></a>
+<a class="el" href="classgame_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;a, const Scalar b)</td></tr>
+<tr class="memitem:acb452b0d886d80bba29c5947e0070f45"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb452b0d886d80bba29c5947e0070f45"></a>
+<a class="el" href="classgame_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;a, const Scalar b)</td></tr>
 <tr class="memitem:ab3d027474d5cf73cd6f7bac7f2b1d18a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3d027474d5cf73cd6f7bac7f2b1d18a"></a>
 Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>dot</b> (const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;a, const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;b)</td></tr>
 <tr class="memitem:a8662ac3165df16880b9f8b8a48e5f252"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8662ac3165df16880b9f8b8a48e5f252"></a>
 <a class="el" href="classgame_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cross_product</b> (const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;a, const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;b)</td></tr>
+<tr class="memitem:ac845ca2f15fff51c6f68a006f0741d26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgame_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_vector.html#ac845ca2f15fff51c6f68a006f0741d26">plane_point</a> (const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;a, const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;b, const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;c, const Scalar x, const Scalar y)</td></tr>
+<tr class="memdesc:ac845ca2f15fff51c6f68a006f0741d26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the point in a plane that intersects with a vertical line.  <a href="#ac845ca2f15fff51c6f68a006f0741d26"></a><br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -193,15 +202,78 @@ Additional Inherited Members</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Vector2</b> (const valarray&lt; Scalar &gt; &amp;source)</td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Coordinate system: x - increase to west, y increases north, z increases up </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+<div class="textblock"><p>A value in 3D space. </p>
+<p>Coordinate system: x - increase to west, y increases north, z increases up </p>
+</div><h2>Friends And Related Function Documentation</h2>
+<a class="anchor" id="ac845ca2f15fff51c6f68a006f0741d26"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgame_1_1_vector.html">Vector</a> plane_point </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgame_1_1_vector.html">Vector</a> &amp;&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Scalar&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Scalar&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines the point in a plane that intersects with a vertical line. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a,b,c</td><td>the points that defines the plane. </td></tr>
+    <tr><td class="paramname">x,y</td><td>the position through which the vertical line goes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>game_math.h</li>
 <li>game_math.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 14 2013 12:51:05 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 21 2013 14:26:49 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

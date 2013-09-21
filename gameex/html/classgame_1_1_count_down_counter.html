@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -92,6 +92,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>An cyclic integer counter that counts down from a starting value to 1.  
+ <a href="classgame_1_1_count_down_counter.html#details">More...</a></p>
+
 <p><code>#include &lt;game_math.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
@@ -99,9 +102,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a70f3a99243bdaf6b92a86a5e7804f8c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70f3a99243bdaf6b92a86a5e7804f8c8"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CountDownCounter</b> (int startValue)</td></tr>
 <tr class="memitem:ab28176ecbbc25a136847ee142d62bb18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_count_down_counter.html#ab28176ecbbc25a136847ee142d62bb18">tick</a> ()</td></tr>
+<tr class="memdesc:ab28176ecbbc25a136847ee142d62bb18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrement the counter if it is zero, it resets.  <a href="#ab28176ecbbc25a136847ee142d62bb18"></a><br/></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>An cyclic integer counter that counts down from a starting value to 1 </p>
+<div class="textblock"><p>An cyclic integer counter that counts down from a starting value to 1. </p>
 </div><h2>Member Function Documentation</h2>
 <a class="anchor" id="ab28176ecbbc25a136847ee142d62bb18"></a>
 <div class="memitem">
@@ -123,7 +127,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Decrement the counter if it is zero, it resets </p>
+
+<p>Decrement the counter if it is zero, it resets. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if it it resets </dd></dl>
 
 </div>
@@ -134,7 +139,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 14 2013 12:51:05 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 21 2013 14:26:49 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

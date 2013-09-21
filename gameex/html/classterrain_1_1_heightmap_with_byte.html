@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -80,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>terrain</b></li><li class="navelem"><a class="el" href="classterrain_1_1_heightmap_with_byte.html">HeightmapWithByte</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceterrain.html">terrain</a></li><li class="navelem"><a class="el" href="classterrain_1_1_heightmap_with_byte.html">HeightmapWithByte</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -91,6 +91,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">terrain::HeightmapWithByte&lt; m_columns, n_rows &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A heightmap that has a Byte as element type.  
+ <a href="classterrain_1_1_heightmap_with_byte.html#details">More...</a></p>
+
+<p><code>#include &lt;heightmap.h&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for terrain::HeightmapWithByte&lt; m_columns, n_rows &gt;:</div>
 <div class="dyncontent">
@@ -108,18 +113,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>read_from_bmp</b> (co
 <tr class="memitem:a1dcc916f67c0b9854c42d3b2652e8837"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1dcc916f67c0b9854c42d3b2652e8837"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>write_to_bmp</b> (const string &amp;bmp_filename)</td></tr>
 <tr class="memitem:a7ab13b5a23f3e5c91bb6091d4b3b68f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ab13b5a23f3e5c91bb6091d4b3b68f7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>normalise</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classterrain_1_1_heightmap_with_byte.html#a7ab13b5a23f3e5c91bb6091d4b3b68f7">normalise</a> ()</td></tr>
+<tr class="memdesc:a7ab13b5a23f3e5c91bb6091d4b3b68f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjusts the heights so that the heighest point is 255 and the lowest point is 0. <br/></td></tr>
 <tr class="inherit_header pub_methods_classterrain_1_1_heightmap"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classterrain_1_1_heightmap')"><img src="closed.png" alt="-"/>&nbsp;Public Member Functions inherited from <a class="el" href="classterrain_1_1_heightmap.html">terrain::Heightmap< game::Byte, m_columns, n_rows ></a></td></tr>
 <tr class="memitem:ac824b6597f1aeb3d17e521c5f94df7a1 inherit pub_methods_classterrain_1_1_heightmap"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac824b6597f1aeb3d17e521c5f94df7a1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Heightmap</b> (const game::Byte &amp;zero_value)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Heightmap</b> (const <a class="el" href="namespacegame.html#a6d9f288b1f2804b06c62d91f37f3b787">game::Byte</a> &amp;zero_value)</td></tr>
 <tr class="memitem:a7f68cc6c7af8acdabaf79ee8aec769e3 inherit pub_methods_classterrain_1_1_heightmap"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f68cc6c7af8acdabaf79ee8aec769e3"></a>
 const container_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>elems</b> () const</td></tr>
 <tr class="memitem:a397c002854fc34d5ad1021a2cbe8d5d7 inherit pub_methods_classterrain_1_1_heightmap"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a397c002854fc34d5ad1021a2cbe8d5d7"></a>
 container_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>elems</b> ()</td></tr>
 <tr class="memitem:a16d096580baeb2691934612b5dbb1f3d inherit pub_methods_classterrain_1_1_heightmap"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16d096580baeb2691934612b5dbb1f3d"></a>
-const game::Byte &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (size_t c, size_t r) const</td></tr>
+const <a class="el" href="namespacegame.html#a6d9f288b1f2804b06c62d91f37f3b787">game::Byte</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (size_t c, size_t r) const</td></tr>
 <tr class="memitem:a0fa0aa034225a6714711f96732a9f819 inherit pub_methods_classterrain_1_1_heightmap"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0fa0aa034225a6714711f96732a9f819"></a>
-game::Byte &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (size_t c, size_t r)</td></tr>
+<a class="el" href="namespacegame.html#a6d9f288b1f2804b06c62d91f37f3b787">game::Byte</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (size_t c, size_t r)</td></tr>
 <tr class="memitem:adf810ae333d4560403df91bb62cb1167 inherit pub_methods_classterrain_1_1_heightmap"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf810ae333d4560403df91bb62cb1167"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>count_rows</b> () const</td></tr>
 <tr class="memitem:a1d1dbda1f158212bf84c304002e78839 inherit pub_methods_classterrain_1_1_heightmap"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d1dbda1f158212bf84c304002e78839"></a>
@@ -127,34 +133,46 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>count_columns</b> (
 <tr class="memitem:a2a8298902b1fb520c3a1d962ec113a53 inherit pub_methods_classterrain_1_1_heightmap"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a8298902b1fb520c3a1d962ec113a53"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size_traverse_triangles</b> () const</td></tr>
 <tr class="memitem:a6477fe49530b27d09991714a71a3b7c2 inherit pub_methods_classterrain_1_1_heightmap"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6477fe49530b27d09991714a71a3b7c2"></a>
-game::Byte&#160;</td><td class="memItemRight" valign="bottom"><b>max_height</b> () const</td></tr>
+<a class="el" href="namespacegame.html#a6d9f288b1f2804b06c62d91f37f3b787">game::Byte</a>&#160;</td><td class="memItemRight" valign="bottom"><b>max_height</b> () const</td></tr>
 <tr class="memitem:a406cd60e5a23c8aefbb9214358bff475 inherit pub_methods_classterrain_1_1_heightmap"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a406cd60e5a23c8aefbb9214358bff475"></a>
-game::Byte&#160;</td><td class="memItemRight" valign="bottom"><b>min_height</b> () const</td></tr>
-<tr class="memitem:a5963c149ae1b9f886cc3688b29b7145c inherit pub_methods_classterrain_1_1_heightmap"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5963c149ae1b9f886cc3688b29b7145c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>traverse</b> (std::function&lt; void(int c, int r, game::Byteh)&gt; applyF) const</td></tr>
-<tr class="memitem:ae24679dbd6f5e774c8d33a2d1f4ee616 inherit pub_methods_classterrain_1_1_heightmap"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae24679dbd6f5e774c8d33a2d1f4ee616"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>traverse_triangles</b> (std::function&lt; void(int c, int r, game::Byteh)&gt; applyF) const</td></tr>
+<a class="el" href="namespacegame.html#a6d9f288b1f2804b06c62d91f37f3b787">game::Byte</a>&#160;</td><td class="memItemRight" valign="bottom"><b>min_height</b> () const</td></tr>
+<tr class="memitem:ab17791438539bd27fb110ed998a0239b inherit pub_methods_classterrain_1_1_heightmap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classterrain_1_1_heightmap.html#ab17791438539bd27fb110ed998a0239b">traverse</a> (triangle_fun_t applyF) const</td></tr>
+<tr class="memdesc:ab17791438539bd27fb110ed998a0239b inherit pub_methods_classterrain_1_1_heightmap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a function for each vertex in the heightmap.  <a href="#ab17791438539bd27fb110ed998a0239b"></a><br/></td></tr>
+<tr class="memitem:a8144739bc713d39d4700e9978814ae23 inherit pub_methods_classterrain_1_1_heightmap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classterrain_1_1_heightmap.html#a8144739bc713d39d4700e9978814ae23">traverse_triangles</a> (triangle_fun_t applyF) const</td></tr>
+<tr class="memdesc:a8144739bc713d39d4700e9978814ae23 inherit pub_methods_classterrain_1_1_heightmap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a function that helps with the rendering of a triangle strip.  <a href="#a8144739bc713d39d4700e9978814ae23"></a><br/></td></tr>
+<tr class="memitem:a815b6cbdbcc2b9366bb236cf69309b47 inherit pub_methods_classterrain_1_1_heightmap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classterrain_1_1_heightmap.html#a815b6cbdbcc2b9366bb236cf69309b47">apply_triangle</a> (const Scalar c, const Scalar r, triangle_fun_t applyF) const</td></tr>
+<tr class="memdesc:a815b6cbdbcc2b9366bb236cf69309b47 inherit pub_methods_classterrain_1_1_heightmap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a function for each vertex in the triangle that contains given coordinates.  <a href="#a815b6cbdbcc2b9366bb236cf69309b47"></a><br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classterrain_1_1_heightmap"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classterrain_1_1_heightmap')"><img src="closed.png" alt="-"/>&nbsp;Public Types inherited from <a class="el" href="classterrain_1_1_heightmap.html">terrain::Heightmap< game::Byte, m_columns, n_rows ></a></td></tr>
 <tr class="memitem:a5eb9fbd7bac4bbb0b5dc0ceacb724a51 inherit pub_types_classterrain_1_1_heightmap"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5eb9fbd7bac4bbb0b5dc0ceacb724a51"></a>
-typedef std::array&lt; game::Byte, <br class="typebreak"/>
+typedef std::array&lt; <a class="el" href="namespacegame.html#a6d9f288b1f2804b06c62d91f37f3b787">game::Byte</a>, <br class="typebreak"/>
 n_rows *m_columns &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>container_t</b></td></tr>
+<tr class="memitem:a86632ea3dc9495dc577adeb19ff48a41 inherit pub_types_classterrain_1_1_heightmap"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86632ea3dc9495dc577adeb19ff48a41"></a>
+typedef std::function&lt; void(size_t <br class="typebreak"/>
+c, size_t r, game::Byteh)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>triangle_fun_t</b></td></tr>
 <tr class="inherit_header pro_methods_classterrain_1_1_heightmap"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classterrain_1_1_heightmap')"><img src="closed.png" alt="-"/>&nbsp;Protected Member Functions inherited from <a class="el" href="classterrain_1_1_heightmap.html">terrain::Heightmap< game::Byte, m_columns, n_rows ></a></td></tr>
 <tr class="memitem:ad2bed3af27901befdb92de37c7175f55 inherit pro_methods_classterrain_1_1_heightmap"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2bed3af27901befdb92de37c7175f55"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>check_range</b> (size_t c, size_t r) const</td></tr>
+<tr class="memitem:abee8107e4c088dbe5b4f926568559c7f inherit pro_methods_classterrain_1_1_heightmap"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abee8107e4c088dbe5b4f926568559c7f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (triangle_fun_t applyF, size_t c, size_t r) const</td></tr>
 <tr class="inherit_header pro_attribs_classterrain_1_1_heightmap"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classterrain_1_1_heightmap')"><img src="closed.png" alt="-"/>&nbsp;Protected Attributes inherited from <a class="el" href="classterrain_1_1_heightmap.html">terrain::Heightmap< game::Byte, m_columns, n_rows ></a></td></tr>
 <tr class="memitem:ab4cf43b92ea36770fdb7c2d6689acbb3 inherit pro_attribs_classterrain_1_1_heightmap"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4cf43b92ea36770fdb7c2d6689acbb3"></a>
 container_t&#160;</td><td class="memItemRight" valign="bottom"><b>_elems</b></td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><h3>template&lt;size_t m_columns, size_t n_rows&gt;<br/>
+class terrain::HeightmapWithByte&lt; m_columns, n_rows &gt;</h3>
+
+<p>A heightmap that has a Byte as element type. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>heightmap.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 14 2013 12:51:05 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 21 2013 14:26:49 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

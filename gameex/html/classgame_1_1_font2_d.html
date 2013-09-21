@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -103,88 +103,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa27f73141668e33dd6b0c40b86b5e493"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa27f73141668e33dd6b0c40b86b5e493"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Font2D</b> (const std::string &amp;fileName, int pointSize)</td></tr>
 <tr class="memitem:ad676383d5508f88dd4643faca49e419c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_font2_d.html#ad676383d5508f88dd4643faca49e419c">set_fg</a> (const SDL_Color &amp;value)</td></tr>
-<tr class="memitem:a9356c0d3b9fc34bf9b94352ea44458f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_font2_d.html#a9356c0d3b9fc34bf9b94352ea44458f6">render</a> (SDL_Surface &amp;surface, const Sint16 x, const Sint16 y, const std::string &amp;text) const </td></tr>
-<tr class="memitem:a840a52eaa5ff003417e3a881a459161e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_font2_d.html#a840a52eaa5ff003417e3a881a459161e">render_center</a> (SDL_Surface &amp;surface, const Sint16 x, const Sint16 y, const std::string &amp;text) const </td></tr>
+<tr class="memdesc:ad676383d5508f88dd4643faca49e419c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set foreground colour.  <a href="#ad676383d5508f88dd4643faca49e419c"></a><br/></td></tr>
+<tr class="memitem:a9356c0d3b9fc34bf9b94352ea44458f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9356c0d3b9fc34bf9b94352ea44458f6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_font2_d.html#a9356c0d3b9fc34bf9b94352ea44458f6">render</a> (SDL_Surface &amp;surface, const Sint16 x, const Sint16 y, const std::string &amp;text) const </td></tr>
+<tr class="memdesc:a9356c0d3b9fc34bf9b94352ea44458f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render with transparent background, using the current foreground colour. <br/></td></tr>
+<tr class="memitem:a840a52eaa5ff003417e3a881a459161e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a840a52eaa5ff003417e3a881a459161e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_font2_d.html#a840a52eaa5ff003417e3a881a459161e">render_center</a> (SDL_Surface &amp;surface, const Sint16 x, const Sint16 y, const std::string &amp;text) const </td></tr>
+<tr class="memdesc:a840a52eaa5ff003417e3a881a459161e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw such that x is the horizontal center. <br/></td></tr>
 </table>
 <h2>Member Function Documentation</h2>
-<a class="anchor" id="a9356c0d3b9fc34bf9b94352ea44458f6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void game::Font2D::render </td>
-          <td>(</td>
-          <td class="paramtype">SDL_Surface &amp;&#160;</td>
-          <td class="paramname"><em>surface</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Sint16&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Sint16&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>text</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Render with transparent background, using the current foreground colour </p>
-
-</div>
-</div>
-<a class="anchor" id="a840a52eaa5ff003417e3a881a459161e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void game::Font2D::render_center </td>
-          <td>(</td>
-          <td class="paramtype">SDL_Surface &amp;&#160;</td>
-          <td class="paramname"><em>surface</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Sint16&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Sint16&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>text</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Draw such that x is the horizontal center </p>
-
-</div>
-</div>
 <a class="anchor" id="ad676383d5508f88dd4643faca49e419c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -206,7 +133,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set foreground colour. Default is white </p>
+
+<p>Set foreground colour. </p>
+<p>Default is white </p>
 
 </div>
 </div>
@@ -217,7 +146,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 14 2013 12:51:05 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 21 2013 14:26:49 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

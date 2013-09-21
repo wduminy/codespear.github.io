@@ -47,7 +47,7 @@ public:
 };
 {% endhighlight %}
 
-## OpenGL Traingle Strips
+## OpenGL Triangle Strips
 That wraps up step one: you have geometry.  Now we decide how render the geometry.  Let’s create a triangle strip for each column of squares.  Consider the squares in the west-most column. The vertices on left (west) side of those squares have \\(c = 0\\), and those on the right hand side \\(c = 1\\).  For this column you create the triangle strip by walking the following  \\((c,r)\\) sequence: \\((1,0), (0,0), (1,1), (0,1), (1,2), (0.2), (1,3) …. (1,m),(0.m)\\).  
 This traversal through the elements in a heightmap, can be implemented on the terrain::Heightmap class template.  Listing 2 shows the new traverse_triangles method.  This method takes a function as argument.  It calls this function for each triple \\((c,r,h)\\) it visits while walking in the desired sequence column by column.  It emits a sentinel triple \\((-1,-1,0)\\) to indicate the end of a column has been reached.
 
@@ -136,3 +136,4 @@ int main( int , char* [] ) {
 {% endhighlight %}
 
 This concludes the post. Using the BMP file as as input,  you created a three-dimensional image that has 4900 triangles.  And maybe you leant a bit more of the new C++ language features.
+
