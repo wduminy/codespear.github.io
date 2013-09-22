@@ -5,6 +5,7 @@ tags: [TBD]
 excerpt: TBD 
 ---
 # Background reading
+http://www.arcsynthesis.org/gltut/Illumination/Tut09%20Mesh%20Topology.html
 
 ## [Another Walch 2005](http://www.gamedev.net/page/resources/_/technical/graphics-programming-and-theory/normal-computations-for-heightfield-lighting-r2264)
 ### Mean Weighted Equally
