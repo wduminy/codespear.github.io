@@ -5,7 +5,8 @@ tags: [TBD]
 excerpt: TBD 
 ---
 # Background reading
-http://www.arcsynthesis.org/gltut/Illumination/Tut09%20Mesh%20Topology.html
+## [Per vertex light](http://www.arcsynthesis.org/gltut/Illumination/Tutorial%2010.html#d0e9855)
+The light is computed initially in world space, then transformed into camera space. The camera-space light position is given to both of the shaders. Rendering proceeds normally from there.
 
 ## [Another Walch 2005](http://www.gamedev.net/page/resources/_/technical/graphics-programming-and-theory/normal-computations-for-heightfield-lighting-r2264)
 ### Mean Weighted Equally
