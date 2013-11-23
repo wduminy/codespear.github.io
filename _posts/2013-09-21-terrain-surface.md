@@ -11,7 +11,7 @@ Recall from the <a href="{% post_url 2013-07-13-terrain-rendering-basics %}">ter
 
 It helps to think of this problem as a two step process. First, you need to identify the triangle in the heightmap for the coordinate \\((x,y)\\).  Then you find the point of intersection between the triangle's plane and the line that drops down vertically through \\((x,y)\\).   
 
-Using the ideas described here, I placed some vertical poles in my terrain.  The result is show on the right hand side.
+Using the ideas described here, I placed some vertical poles in my terrain.  The resulting image is shown here.
 
 ## Step 1: Identify the triangle
 The way you identify the triangle depends on the way you drew them.  Assuming you used the rendering algorithm I described in the <a href="{% post_url 2013-07-13-terrain-rendering-basics %}">mentioned post</a>, you can start with world coordinates \\((x,y)\\) and translate it to \\((c,r)\\) so that the latter is the heightmap coordinates.  For example, if you have \\(10\\) world units per heightmap unit, your world coordinates \\((23,24)\\) would translate to the heightmap coordinates \\((2.3,2.4)\\).  Take the [`floor`](http://www.cplusplus.com/reference/cmath/floor/) of these \\((c,r)\\) coordinates and you end up with the answer that the triangle is in column 3, row 3 of the matrix.  That is in zero based index \\((2,2)\\).  There are two triangles for that matrix element; we need to decide which one contains \\((c,r)\\).  This answer is illustrated in Listing 1.  Note that there is a corner case handled at the start of the listing (for when \\((r,c)\\) is in the corner :-) ).  
@@ -44,7 +44,7 @@ Vector point(int c, int r) {
 {% endhighlight %}
 
 ## Step 2: Point of intersection
-It is always a good idea to explore the maths a bit. Let the identified triangle be the vectors \\(a\\), \\(b\\) and \\(c\\). The normal for the plane that contains these vectors is \\(n = (a - b) \times (c - b)\\).  An equation for the plane is then \\((v - b) \cdot n = 0\\).  Let \\(v = (x,y,z)\\), then the solution for \\(z\\) in the plane equation is this rather long expression:
+When the opportunity arises, it is always a good idea to review our understanding of geometry a bit. Let the identified triangle be the vectors \\(a\\), \\(b\\) and \\(c\\). The normal for the plane that contains these vectors is \\(n = (a - b) \times (c - b)\\).  An equation for the plane is then \\((v - b) \cdot n = 0\\).  Let \\(v = (x,y,z)\\), then the solution for \\(z\\) in the plane equation is this rather long expression:
 
 \\(\frac{( ( b_x-a_x) c_z+( a_z-b_z) c_x+a_xb_z-a_zb_x) y+( ( a_y-b_y) c_z+( b_z-a_z) c_y-a_yb_z+a_zb_y) x+( a_xb_y-a_yb_x) c_z+( a_zb_x-a_xb_z) c_y+( a_yb_z-a_zb_y) c_x}{( b_x-a_x) c_y+( a_y-b_y) c_x+a_xb_y-a_yb_x}\\)  
 
