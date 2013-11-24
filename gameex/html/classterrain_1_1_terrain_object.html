@@ -36,6 +36,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -103,7 +104,7 @@ Inheritance diagram for terrain::TerrainObject&lt; elemT, heightmapT, transforme
  <div class="center">
   <img src="classterrain_1_1_terrain_object.png" usemap="#terrain::TerrainObject&lt; elemT, heightmapT, transformerT &gt;_map" alt=""/>
   <map id="terrain::TerrainObject&lt; elemT, heightmapT, transformerT &gt;_map" name="terrain::TerrainObject&lt; elemT, heightmapT, transformerT &gt;_map">
-<area href="classgame_1_1_game_object.html" title="Use this as base class for all objects that are updated and drawn in your game." alt="game::GameObject" shape="rect" coords="0,56,344,80"/>
+<area href="classgame_1_1_game_object.html" title="Use this as base class for all objects that are updated or drawn in your game." alt="game::GameObject" shape="rect" coords="0,56,344,80"/>
 <area href="classgame_1_1_drawable.html" alt="game::Drawable" shape="rect" coords="0,0,344,24"/>
 </map>
  </div></div>
@@ -118,9 +119,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a105618577665210b063dbd8207bfe827"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a105618577665210b063dbd8207bfe827"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classterrain_1_1_terrain_object.html#a105618577665210b063dbd8207bfe827">draw</a> (const <a class="el" href="classgame_1_1_draw_context.html">game::DrawContext</a> &amp;dc) override</td></tr>
 <tr class="memdesc:a105618577665210b063dbd8207bfe827"><td class="mdescLeft">&#160;</td><td class="mdescRight">draw only this, not children <br/></td></tr>
+<tr class="memitem:a911d1b1c528664e9fd483c65dfa5f883"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classterrain_1_1_terrain_object.html#a911d1b1c528664e9fd483c65dfa5f883">draw_wire</a> (const <a class="el" href="classgame_1_1_draw_context.html">game::DrawContext</a> &amp;dc)</td></tr>
+<tr class="memdesc:a911d1b1c528664e9fd483c65dfa5f883"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a wire grid.  <a href="#a911d1b1c528664e9fd483c65dfa5f883"></a><br/></td></tr>
 <tr class="memitem:a49418a32114958a8445632fbd5c54c62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49418a32114958a8445632fbd5c54c62"></a>
 <a class="el" href="classgame_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classterrain_1_1_terrain_object.html#a49418a32114958a8445632fbd5c54c62">floor_at</a> (const Scalar x, const Scalar y) const </td></tr>
 <tr class="memdesc:a49418a32114958a8445632fbd5c54c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">The point of intersection at the world coordinates (x,y). <br/></td></tr>
+<tr class="memitem:a39de4837fd54c05ea89ba8d23b6d8eac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgame_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classterrain_1_1_terrain_object.html#a39de4837fd54c05ea89ba8d23b6d8eac">normal_at</a> (const Scalar x, const Scalar y) const </td></tr>
+<tr class="memdesc:a39de4837fd54c05ea89ba8d23b6d8eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The surface normal at the world coordinates (x,y).  <a href="#a39de4837fd54c05ea89ba8d23b6d8eac"></a><br/></td></tr>
+<tr class="memitem:a4242ccc8a8bf322c6189cc366daa5acc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgame_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classterrain_1_1_terrain_object.html#a4242ccc8a8bf322c6189cc366daa5acc">average_normal_at</a> (const size_t c, const size_t r) const </td></tr>
+<tr class="memdesc:a4242ccc8a8bf322c6189cc366daa5acc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the avarage of the norms arround the given heightmap coordinates (x,y).  <a href="#a4242ccc8a8bf322c6189cc366daa5acc"></a><br/></td></tr>
 <tr class="memitem:a1a6f48d57729184f7f17fce82c1eb0f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a6f48d57729184f7f17fce82c1eb0f0"></a>
 <a class="el" href="classgame_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classterrain_1_1_terrain_object.html#a1a6f48d57729184f7f17fce82c1eb0f0">floor_north_east</a> () const </td></tr>
 <tr class="memdesc:a1a6f48d57729184f7f17fce82c1eb0f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The point at the floor in the north-east corner of the terrain. <br/></td></tr>
@@ -160,6 +167,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>set_active</b
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a5f7edb7b754c9c2fa8647148099be83b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f7edb7b754c9c2fa8647148099be83b"></a>
 std::unique_ptr&lt; heightmapT &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_hmap</b></td></tr>
+<tr class="memitem:a3fddb50adef6ee43a49b4fcc1cdbcef8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3fddb50adef6ee43a49b4fcc1cdbcef8"></a>
+const transformerT&#160;</td><td class="memItemRight" valign="bottom"><b>_transformer</b></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -182,13 +191,121 @@ class terrain::TerrainObject&lt; elemT, heightmapT, transformerT &gt;</h3>
   </table>
   </dd>
 </dl>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2>Member Function Documentation</h2>
+<a class="anchor" id="a4242ccc8a8bf322c6189cc366daa5acc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename elemT , typename heightmapT , typename transformerT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgame_1_1_vector.html">Vector</a> <a class="el" href="classterrain_1_1_terrain_object.html">terrain::TerrainObject</a>&lt; elemT, heightmapT, transformerT &gt;::average_normal_at </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>r</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the avarage of the norms arround the given heightmap coordinates (x,y). </p>
+<p>The result is not normalised. </p>
+
+</div>
+</div>
+<a class="anchor" id="a911d1b1c528664e9fd483c65dfa5f883"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename elemT , typename heightmapT , typename transformerT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classterrain_1_1_terrain_object.html">terrain::TerrainObject</a>&lt; elemT, heightmapT, transformerT &gt;::draw_wire </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgame_1_1_draw_context.html">game::DrawContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>dc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Draw a wire grid. </p>
+<p>Call this for debugging your scene. </p>
+
+</div>
+</div>
+<a class="anchor" id="a39de4837fd54c05ea89ba8d23b6d8eac"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename elemT , typename heightmapT , typename transformerT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgame_1_1_vector.html">Vector</a> <a class="el" href="classterrain_1_1_terrain_object.html">terrain::TerrainObject</a>&lt; elemT, heightmapT, transformerT &gt;::normal_at </td>
+          <td>(</td>
+          <td class="paramtype">const Scalar&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Scalar&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The surface normal at the world coordinates (x,y). </p>
+<p>If (x,y) is a touches more than one triangle, the choice of which one is used to determine the normal is stable but arbitrary. The result is not normalised. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>terrain_object.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 21 2013 14:26:49 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 24 2013 11:02:49 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

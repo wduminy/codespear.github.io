@@ -36,6 +36,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,8 +105,8 @@ Inheritance diagram for game::SimpleCollisionManager:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0491add30be7759fb2aec17dbf49a8b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0491add30be7759fb2aec17dbf49a8b7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SimpleCollisionManager</b> (CollisionListener::u_ptr listener)</td></tr>
+<tr class="memitem:ad03fde68ab94df041f2ca48284e88e8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad03fde68ab94df041f2ca48284e88e8c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SimpleCollisionManager</b> (<a class="el" href="classgame_1_1_collision_listener.html">CollisionListener</a> *listener)</td></tr>
 <tr class="memitem:a7ea2cf1108178052ab38e19caaa7ba41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ea2cf1108178052ab38e19caaa7ba41"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (<a class="el" href="classgame_1_1_collidable_polygon.html">CollidablePolygon</a> *collidable) override</td></tr>
 <tr class="memitem:a26d056cf8e18b8bf749299f960ed5a3c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26d056cf8e18b8bf749299f960ed5a3c"></a>
@@ -113,10 +114,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>remove</b> (<a class=
 <tr class="memitem:a1bad8fcd8ac7fb3db93c1253beadf2ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1bad8fcd8ac7fb3db93c1253beadf2ec"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> () override</td></tr>
 <tr class="inherit_header pub_methods_classgame_1_1_collision_manager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgame_1_1_collision_manager')"><img src="closed.png" alt="-"/>&nbsp;Public Member Functions inherited from <a class="el" href="classgame_1_1_collision_manager.html">game::CollisionManager</a></td></tr>
-<tr class="memitem:afd12292f1ede2880b68b7a2e028be50e inherit pub_methods_classgame_1_1_collision_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd12292f1ede2880b68b7a2e028be50e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CollisionManager</b> (CollisionListener::u_ptr listener)</td></tr>
-<tr class="memitem:a9e5fe29da8ff5e588094eb131355a0fa inherit pub_methods_classgame_1_1_collision_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e5fe29da8ff5e588094eb131355a0fa"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>check_and_add</b> (<a class="el" href="classgame_1_1_collidable_polygon.html">CollidablePolygon</a> *collidable, const bool ignoreIfCollide=false)</td></tr>
+<tr class="memitem:af5e793040846df6cb1e29d900f984210 inherit pub_methods_classgame_1_1_collision_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5e793040846df6cb1e29d900f984210"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CollisionManager</b> (<a class="el" href="classgame_1_1_collision_listener.html">CollisionListener</a> *listener)</td></tr>
+<tr class="memitem:a9e5fe29da8ff5e588094eb131355a0fa inherit pub_methods_classgame_1_1_collision_manager"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_collision_manager.html#a9e5fe29da8ff5e588094eb131355a0fa">check_and_add</a> (<a class="el" href="classgame_1_1_collidable_polygon.html">CollidablePolygon</a> *collidable, const bool ignoreIfCollide=false)</td></tr>
+<tr class="memdesc:a9e5fe29da8ff5e588094eb131355a0fa inherit pub_methods_classgame_1_1_collision_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks for a collision and adds object.  <a href="#a9e5fe29da8ff5e588094eb131355a0fa"></a><br/></td></tr>
 <tr class="memitem:af8862b368f8516b6be3be003edffcb05 inherit pub_methods_classgame_1_1_collision_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8862b368f8516b6be3be003edffcb05"></a>
 const <a class="el" href="classgame_1_1_collision_listener.html">CollisionListener</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>listener</b> () const </td></tr>
 </table><table class="memberdecls">
@@ -139,7 +140,7 @@ typedef std::unique_ptr<br class="typebreak"/>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 21 2013 14:26:49 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 24 2013 11:02:49 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

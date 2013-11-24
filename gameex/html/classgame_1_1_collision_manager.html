@@ -36,6 +36,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -99,7 +100,7 @@ Inheritance diagram for game::CollisionManager:</div>
  <div class="center">
   <img src="classgame_1_1_collision_manager.png" usemap="#game::CollisionManager_map" alt=""/>
   <map id="game::CollisionManager_map" name="game::CollisionManager_map">
-<area href="classgame_1_1_collision_manager_with_boxes.html" alt="game::CollisionManagerWithBoxes" shape="rect" coords="0,56,205,80"/>
+<area href="classgame_1_1_collision_manager_with_boxes.html" title="A collision managers that resolves collisions using boxes." alt="game::CollisionManagerWithBoxes" shape="rect" coords="0,56,205,80"/>
 <area href="classgame_1_1_simple_collision_manager.html" alt="game::SimpleCollisionManager" shape="rect" coords="215,56,420,80"/>
 </map>
  </div></div>
@@ -112,10 +113,10 @@ typedef std::unique_ptr<br class="typebreak"/>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afd12292f1ede2880b68b7a2e028be50e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd12292f1ede2880b68b7a2e028be50e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CollisionManager</b> (CollisionListener::u_ptr listener)</td></tr>
-<tr class="memitem:a9e5fe29da8ff5e588094eb131355a0fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e5fe29da8ff5e588094eb131355a0fa"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>check_and_add</b> (<a class="el" href="classgame_1_1_collidable_polygon.html">CollidablePolygon</a> *collidable, const bool ignoreIfCollide=false)</td></tr>
+<tr class="memitem:af5e793040846df6cb1e29d900f984210"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5e793040846df6cb1e29d900f984210"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CollisionManager</b> (<a class="el" href="classgame_1_1_collision_listener.html">CollisionListener</a> *listener)</td></tr>
+<tr class="memitem:a9e5fe29da8ff5e588094eb131355a0fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_collision_manager.html#a9e5fe29da8ff5e588094eb131355a0fa">check_and_add</a> (<a class="el" href="classgame_1_1_collidable_polygon.html">CollidablePolygon</a> *collidable, const bool ignoreIfCollide=false)</td></tr>
+<tr class="memdesc:a9e5fe29da8ff5e588094eb131355a0fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks for a collision and adds object.  <a href="#a9e5fe29da8ff5e588094eb131355a0fa"></a><br/></td></tr>
 <tr class="memitem:a8c1be6e0d3e02f748a28a5d1694b6d72"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c1be6e0d3e02f748a28a5d1694b6d72"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (<a class="el" href="classgame_1_1_collidable_polygon.html">CollidablePolygon</a> *collidable)=0</td></tr>
 <tr class="memitem:a4395721023f063a423096ae03cf1965c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4395721023f063a423096ae03cf1965c"></a>
@@ -130,6 +131,36 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:af180cfbf9b633ee6067e133b1dd7cf2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af180cfbf9b633ee6067e133b1dd7cf2d"></a>
 virtual <a class="el" href="classgame_1_1_collidable_polygon.html">CollidablePolygon</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>collider_or_null</b> (<a class="el" href="classgame_1_1_collidable_polygon.html">CollidablePolygon</a> *collidable)=0</td></tr>
 </table>
+<h2>Member Function Documentation</h2>
+<a class="anchor" id="a9e5fe29da8ff5e588094eb131355a0fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool game::CollisionManager::check_and_add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgame_1_1_collidable_polygon.html">CollidablePolygon</a> *&#160;</td>
+          <td class="paramname"><em>collidable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>ignoreIfCollide</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks for a collision and adds object. </p>
+<p>\ This method is the one that causes collision events </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>collisions2d.h</li>
 <li>collisions2d.cpp</li>
@@ -137,7 +168,7 @@ virtual <a class="el" href="classgame_1_1_collidable_polygon.html">CollidablePol
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 21 2013 14:26:49 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 24 2013 11:02:49 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

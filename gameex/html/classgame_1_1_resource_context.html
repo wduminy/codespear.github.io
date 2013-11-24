@@ -36,6 +36,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -92,6 +93,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">game::ResourceContext Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="classgame_1_1_resource_context.html" title="The ResourceContext keeps the resources.">ResourceContext</a> keeps the resources.  
+ <a href="classgame_1_1_resource_context.html#details">More...</a></p>
+
+<p><code>#include &lt;game_base.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -106,11 +112,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a01a830e4a84cc62c33235113521ded9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the text from the resource folder.  <a href="#a01a830e4a84cc62c33235113521ded9e"></a><br/></td></tr>
 <tr class="memitem:a277836e8d05e4746758eff5efb061e85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a277836e8d05e4746758eff5efb061e85"></a>
 const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>dir</b> () const </td></tr>
+<tr class="memitem:a214a95c6bf0e939c96061e58ca9b3e4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a214a95c6bf0e939c96061e58ca9b3e4e"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_resource_context.html#a214a95c6bf0e939c96061e58ca9b3e4e">path_to</a> (const char *file_name) const </td></tr>
+<tr class="memdesc:a214a95c6bf0e939c96061e58ca9b3e4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the path to a media file. <br/></td></tr>
 <tr class="memitem:abbbcc30a8e492eeb6da9038a1463db98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abbbcc30a8e492eeb6da9038a1463db98"></a>
 <a class="el" href="classgame_1_1_shader_program.html">ShaderProgram</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>load_program</b> (<a class="el" href="classgame_1_1_glex.html">Glex</a> *gl, const char *filePrefix) const </td></tr>
 <tr class="memitem:ac11a211a867ed01ad3d36c9f5bed51c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgame_1_1_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_resource_context.html#ac11a211a867ed01ad3d36c9f5bed51c5">load_texture_bmp</a> (<a class="el" href="classgame_1_1_glex.html">Glex</a> *gl, const char *filename, const int textureIndex) const </td></tr>
 </table>
-<h2>Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="classgame_1_1_resource_context.html" title="The ResourceContext keeps the resources.">ResourceContext</a> keeps the resources. </p>
+<p>The folder where the resources are is specified in the constructor. </p>
+</div><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4dbd6f8758fac5a66c5a4829230f9631"></a>
 <div class="memitem">
 <div class="memproto">
@@ -207,7 +219,7 @@ const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>dir</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 21 2013 14:26:49 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 24 2013 11:02:49 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

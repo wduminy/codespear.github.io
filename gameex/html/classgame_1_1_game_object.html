@@ -36,6 +36,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -93,7 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Use this as base class for all objects that are updated and drawn in your game.  
+<p>Use this as base class for all objects that are updated or drawn in your game.  
  <a href="classgame_1_1_game_object.html#details">More...</a></p>
 
 <p><code>#include &lt;game_base.h&gt;</code></p>
@@ -105,7 +106,7 @@ Inheritance diagram for game::GameObject:</div>
   <map id="game::GameObject_map" name="game::GameObject_map">
 <area href="classgame_1_1_drawable.html" alt="game::Drawable" shape="rect" coords="708,0,1052,24"/>
 <area href="classgame_1_1_game_object_with_parts.html" title="Use this as base class for GameObject instances that contain other GameObjects." alt="game::GameObjectWithParts" shape="rect" coords="177,112,521,136"/>
-<area href="classgame_1_1_panel.html" title="Panels are drawn on screen." alt="game::Panel" shape="rect" coords="531,112,875,136"/>
+<area href="classgame_1_1_panel.html" title="A Panel is a two dimensional surface drawn using screen coordinates." alt="game::Panel" shape="rect" coords="531,112,875,136"/>
 <area href="classgame_1_1_sphere_camera.html" alt="game::SphereCamera" shape="rect" coords="885,112,1229,136"/>
 <area href="classterrain_1_1_terrain_object.html" title="A GameObject that renders a heightmap." alt="terrain::TerrainObject&lt; elemT, heightmapT, transformerT &gt;" shape="rect" coords="1239,112,1583,136"/>
 <area href="classgame_1_1_game_object_chain_link.html" title="Use this as base when you have a chain of GameObjectWithParts such that only one object in the chain ..." alt="game::GameObjectChainLink" shape="rect" coords="0,168,344,192"/>
@@ -156,8 +157,11 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>set_hidden</b
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>set_active</b> (const bool value)</td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Use this as base class for all objects that are updated and drawn in your game. </p>
-<p>It is not the base class of all objects you need for your game. Rather the <a class="el" href="classgame_1_1_game_object.html" title="Use this as base class for all objects that are updated and drawn in your game.">GameObject</a> instances forms a runtime structure that defines the basic composition of your game. Instances cannot be copied. You keep exactly one instance for each important game concept in memory. The most important members to take note of are <a class="el" href="classgame_1_1_game_object.html#a1bf8e5f98ad8c00a95df4bb248ab7097" title="update this and update children">update()</a> and <a class="el" href="classgame_1_1_game_object.html#a2b4f9dd1c722e671afb6132f74c898a8" title="draw only this, not children">draw()</a>. These functions are called during the update and draw phases of the game loop. If the object should not be called during update it can be deactivated. Also, if it is not to be drawn, it can be hidden. These states are independent; e.g. an object that is not active can still be visible. The calls to <a class="el" href="classgame_1_1_game_object.html#a1bf8e5f98ad8c00a95df4bb248ab7097" title="update this and update children">update()</a> is done in the order in which the <a class="el" href="classgame_1_1_game_object.html" title="Use this as base class for all objects that are updated and drawn in your game.">GameObject</a> instances are added to their container but the calls to <a class="el" href="classgame_1_1_game_object.html#a2b4f9dd1c722e671afb6132f74c898a8" title="draw only this, not children">draw()</a> is different. The draw order of all game objects are decided when the game starts and is based on the value given during construction. It is therefore possible to have a draw order for your objects that is entirely different from the update order </p>
+<div class="textblock"><p>Use this as base class for all objects that are updated or drawn in your game. </p>
+<p>It is not the base class of all objects you need for your game. Rather the <a class="el" href="classgame_1_1_game_object.html" title="Use this as base class for all objects that are updated or drawn in your game.">GameObject</a> instances forms a runtime structure that defines the basic composition of your game. Instances cannot be copied. You keep exactly one instance for each important game concept in memory.</p>
+<p>The most important members to take note of are <a class="el" href="classgame_1_1_game_object.html#a1bf8e5f98ad8c00a95df4bb248ab7097" title="update this and update children">update()</a> and <a class="el" href="classgame_1_1_game_object.html#a2b4f9dd1c722e671afb6132f74c898a8" title="draw only this, not children">draw()</a>. These functions are called during the update and draw phases of the game loop. If the object should not be called during update it can be deactivated. Also, if it is not to be drawn, it can be hidden. These states are independent; e.g. an object that is not active can still be visible.</p>
+<p>The calls to <a class="el" href="classgame_1_1_game_object.html#a1bf8e5f98ad8c00a95df4bb248ab7097" title="update this and update children">update()</a> is done in the order in which the <a class="el" href="classgame_1_1_game_object.html" title="Use this as base class for all objects that are updated or drawn in your game.">GameObject</a> instances are added to their container but the calls to <a class="el" href="classgame_1_1_game_object.html#a2b4f9dd1c722e671afb6132f74c898a8" title="draw only this, not children">draw()</a> is different. The draw order of all game objects are decided when the game starts and is based on the value given during construction. It is therefore possible to have a draw order for your objects that is entirely different from the update order.</p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="using_gameobjects.html">Using GameObjects</a> </dd></dl>
 </div><h2>Member Function Documentation</h2>
 <a class="anchor" id="a87b55f525838e7bb493e72475e9b73e7"></a>
 <div class="memitem">
@@ -191,7 +195,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>set_active</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 21 2013 14:26:49 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 24 2013 11:02:49 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

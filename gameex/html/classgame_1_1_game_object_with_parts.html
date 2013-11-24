@@ -36,6 +36,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -94,7 +95,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Use this as base class for <a class="el" href="classgame_1_1_game_object.html" title="Use this as base class for all objects that are updated and drawn in your game.">GameObject</a> instances that contain other GameObjects.  
+<p>Use this as base class for <a class="el" href="classgame_1_1_game_object.html" title="Use this as base class for all objects that are updated or drawn in your game.">GameObject</a> instances that contain other GameObjects.  
  <a href="classgame_1_1_game_object_with_parts.html#details">More...</a></p>
 
 <p><code>#include &lt;game_base.h&gt;</code></p>
@@ -104,7 +105,7 @@ Inheritance diagram for game::GameObjectWithParts:</div>
  <div class="center">
   <img src="classgame_1_1_game_object_with_parts.png" usemap="#game::GameObjectWithParts_map" alt=""/>
   <map id="game::GameObjectWithParts_map" name="game::GameObjectWithParts_map">
-<area href="classgame_1_1_game_object.html" title="Use this as base class for all objects that are updated and drawn in your game." alt="game::GameObject" shape="rect" coords="91,56,264,80"/>
+<area href="classgame_1_1_game_object.html" title="Use this as base class for all objects that are updated or drawn in your game." alt="game::GameObject" shape="rect" coords="91,56,264,80"/>
 <area href="classgame_1_1_drawable.html" alt="game::Drawable" shape="rect" coords="91,0,264,24"/>
 <area href="classgame_1_1_game_object_chain_link.html" title="Use this as base when you have a chain of GameObjectWithParts such that only one object in the chain ..." alt="game::GameObjectChainLink" shape="rect" coords="0,168,173,192"/>
 <area href="classgame_1_1_main_object.html" alt="game::MainObject" shape="rect" coords="183,168,356,192"/>
@@ -169,8 +170,8 @@ typedef std::unique_ptr<br class="typebreak"/>
 &lt; <a class="el" href="classgame_1_1_game_object.html">GameObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>u_ptr</b></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Use this as base class for <a class="el" href="classgame_1_1_game_object.html" title="Use this as base class for all objects that are updated and drawn in your game.">GameObject</a> instances that contain other GameObjects. </p>
-<p>Children are added via add_part(), either during construction or during <a class="el" href="classgame_1_1_game_object_with_parts.html#a98cdcc055bf6f84dd773e16be1afdffb" title="Call initialise() for every child.">initialise()</a>. Typically initialised is used when the <a class="el" href="classgame_1_1_game_object.html" title="Use this as base class for all objects that are updated and drawn in your game.">GameObject</a> requires a draw context or a resource context during construction. The children are added to the container and will be destroyed when the container is destroyed. However, this destruction occurs only when the game loop terminates. This means that it is safe to reference these pointers while the game is in progress. The hierarchy formed by this containment is used to manage the visibility and the active status. This means that hiding and object will hide its children and deactivating an object deactivates it children. There is a subtle but important difference between the visibility and the active status hierarchy when a child disagrees with its parent. The active status of the parent overrides the active status of the child, but the visibility status of the parent does not override the visibility of the child. So if you hide an object and thereafter show one of its children, the child will be drawn. </p>
+<div class="textblock"><p>Use this as base class for <a class="el" href="classgame_1_1_game_object.html" title="Use this as base class for all objects that are updated or drawn in your game.">GameObject</a> instances that contain other GameObjects. </p>
+<p>Children are added via add_part(), either during construction or during <a class="el" href="classgame_1_1_game_object_with_parts.html#a98cdcc055bf6f84dd773e16be1afdffb" title="Call initialise() for every child.">initialise()</a>. Typically initialised is used when the <a class="el" href="classgame_1_1_game_object.html" title="Use this as base class for all objects that are updated or drawn in your game.">GameObject</a> requires a draw context or a resource context during construction. The children are added to the container and will be destroyed when the container is destroyed. However, this destruction occurs only when the game loop terminates. This means that it is safe to reference these pointers while the game is in progress. The hierarchy formed by this containment is used to manage the visibility and the active status. This means that hiding an object will hide its children and deactivating an object deactivates it children. There is a subtle but important difference between the visibility and the active status hierarchy when a child disagrees with its parent. The active status of the parent overrides the active status of the child, but the visibility status of the parent does not override the visibility of the child. So if you hide an object and thereafter show one of its children, the child will be drawn. </p>
 </div><h2>Member Function Documentation</h2>
 <a class="anchor" id="a6d479fe828759454ed980f9ab2d45927"></a>
 <div class="memitem">
@@ -283,7 +284,7 @@ typedef std::unique_ptr<br class="typebreak"/>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 21 2013 14:26:49 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 24 2013 11:02:49 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>
