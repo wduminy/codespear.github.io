@@ -95,7 +95,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>A bounded box has a left-top and a right-bottom location.  
+<p>A two dimensional bound.  
  <a href="classgame_1_1_bounded_box2.html#details">More...</a></p>
 
 <p><code>#include &lt;collisions2d.h&gt;</code></p>
@@ -112,7 +112,11 @@ Inheritance diagram for game::BoundedBox2:</div>
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a58723a492d3e20ca28727f26e3fb7da4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58723a492d3e20ca28727f26e3fb7da4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>BoundedBox2</b> (const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;lt, const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;rb)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_bounded_box2.html#a58723a492d3e20ca28727f26e3fb7da4">BoundedBox2</a> (const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;lt, const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;rb)</td></tr>
+<tr class="memdesc:a58723a492d3e20ca28727f26e3fb7da4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for left top and right bottom. <br/></td></tr>
+<tr class="memitem:a2d5a028246109ec20c8731e8033853c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d5a028246109ec20c8731e8033853c6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_bounded_box2.html#a2d5a028246109ec20c8731e8033853c6">BoundedBox2</a> (const Scalar x, const Scalar y, const Scalar w, const Scalar h)</td></tr>
+<tr class="memdesc:a2d5a028246109ec20c8731e8033853c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for left top and size dimensions. <br/></td></tr>
 <tr class="memitem:acdea8ef20cfed7178956047d4e6b63da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acdea8ef20cfed7178956047d4e6b63da"></a>
 const <a class="el" href="classgame_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>left_top</b> () const </td></tr>
 <tr class="memitem:a4fc384481ebf6e8156f8bba909a2dabd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4fc384481ebf6e8156f8bba909a2dabd"></a>
@@ -135,9 +139,10 @@ const Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>top</b> () co
 <tr class="heading"><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:af7dde5d42760dbf487224c3b30a310a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7dde5d42760dbf487224c3b30a310a4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>adjust_box</b> (const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;p)</td></tr>
-<tr class="memitem:a75bbe5aaf7c7fc1f79ca4d7ea2f99cbf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75bbe5aaf7c7fc1f79ca4d7ea2f99cbf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clear_box</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_bounded_box2.html#af7dde5d42760dbf487224c3b30a310a4">adjust_box</a> (const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;p)</td></tr>
+<tr class="memdesc:af7dde5d42760dbf487224c3b30a310a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes the box bigger so that the point p fits into it. <br/></td></tr>
+<tr class="memitem:a21475351aa83778f172c9e7a1387b1bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_bounded_box2.html#a21475351aa83778f172c9e7a1387b1bd">clear_box</a> (const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;v)</td></tr>
+<tr class="memdesc:a21475351aa83778f172c9e7a1387b1bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes the box a point particle.  <a href="#a21475351aa83778f172c9e7a1387b1bd"></a><br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="friends"></a>
 Friends</h2></td></tr>
@@ -145,15 +150,49 @@ Friends</h2></td></tr>
 ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (ostream &amp;s, const <a class="el" href="classgame_1_1_bounded_box2.html">BoundedBox2</a> &amp;v)</td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>A bounded box has a left-top and a right-bottom location. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+<div class="textblock"><p>A two dimensional bound. </p>
+<p>It has a left-top and a right-bottom location </p>
+</div><h2>Member Function Documentation</h2>
+<a class="anchor" id="a21475351aa83778f172c9e7a1387b1bd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void game::BoundedBox2::clear_box </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Makes the box a point particle. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>is the location of the point </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>collisions2d.h</li>
 <li>collisions2d.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 24 2013 11:02:49 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 24 2014 18:12:07 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

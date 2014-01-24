@@ -15,7 +15,7 @@ Strictly it is not required, but I thought it would be nice to host the site loc
 
 I even get a near wyziwig experience.  When I save a change it updates automatically.  Here a script called _serve.cmd_:
 {% highlight bat %}
-set path=%path%;I:\programs\jekyll\ruby\bin;I:\programs\jekyll\devkit\bin;I:\programs\jekyll\Python\App;
+set path=%path%;c:\programs\jekyll\ruby\bin;c:\programs\jekyll\devkit\bin;c:\programs\jekyll\Python\App;
 jekyll server --drafts --watch
 {% endhighlight %} 	
 

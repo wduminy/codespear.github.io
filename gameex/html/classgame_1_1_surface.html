@@ -126,6 +126,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b> () const </
 <tr class="memitem:a3c2ec61f617dce4d711d5b3df44e6523"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c2ec61f617dce4d711d5b3df44e6523"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_surface.html#a3c2ec61f617dce4d711d5b3df44e6523">pitch</a> () const </td></tr>
 <tr class="memdesc:a3c2ec61f617dce4d711d5b3df44e6523"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of the scan line. <br/></td></tr>
+<tr class="memitem:a2cd5a6b5177088cf742de42b4431fc42"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2cd5a6b5177088cf742de42b4431fc42"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_transparent</b> (const Uint8 r, const Uint8 g, const Uint8 b)</td></tr>
 <tr class="memitem:ab054703f1f1a30cedcefcba144fc6ca3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab054703f1f1a30cedcefcba144fc6ca3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>write_properties</b> (std::ostream &amp;os)</td></tr>
 <tr class="memitem:a4e6c2577c3ec43808749f06f5d2d5425"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_surface.html#a4e6c2577c3ec43808749f06f5d2d5425">blit_from</a> (<a class="el" href="classgame_1_1_surface.html">Surface</a> &amp;src, SDL_Rect &amp;src_rect, SDL_Rect &amp;dst_rect)</td></tr>
@@ -202,7 +204,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>write_properties</b> 
 </div><div class="memdoc">
 
 <p>Copy a rectangle from this one surface into another surface one. </p>
-<p>The width and height in src_rect determine the size of the copied rectangle. Only the position is used in the dst_rect (the width and height are ignored). </p>
+<p>The width and height in src_rect determine the size of the copied rectangle. Only the position is used in the dst_rect (the width and height are ignored). The way the blitting is done depends on a call to set_transparent(). </p>
 
 </div>
 </div>
@@ -213,7 +215,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>write_properties</b> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 24 2013 11:02:49 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 24 2014 18:12:08 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

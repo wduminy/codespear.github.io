@@ -4,6 +4,8 @@ category: graphics
 tags: [TBD]
 excerpt: TBD 
 ---
+
+
 http://www.arcsynthesis.org/gltut/Illumination/Tutorial%2009.html
 Mouse Movement
 This is the first tutorial that uses mouse movement to orient objects and the camera. These controls will be used throughout the rest of
