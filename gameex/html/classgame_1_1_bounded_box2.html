@@ -117,10 +117,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2d5a028246109ec20c8731e8033853c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d5a028246109ec20c8731e8033853c6"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_bounded_box2.html#a2d5a028246109ec20c8731e8033853c6">BoundedBox2</a> (const Scalar x, const Scalar y, const Scalar w, const Scalar h)</td></tr>
 <tr class="memdesc:a2d5a028246109ec20c8731e8033853c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for left top and size dimensions. <br/></td></tr>
-<tr class="memitem:acdea8ef20cfed7178956047d4e6b63da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acdea8ef20cfed7178956047d4e6b63da"></a>
-const <a class="el" href="classgame_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>left_top</b> () const </td></tr>
-<tr class="memitem:a4fc384481ebf6e8156f8bba909a2dabd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4fc384481ebf6e8156f8bba909a2dabd"></a>
-const <a class="el" href="classgame_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>right_bottom</b> () const </td></tr>
+<tr class="memitem:a027ff6ed78548a7836e8143b7987ee16"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a027ff6ed78548a7836e8143b7987ee16"></a>
+const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>left_top</b> () const </td></tr>
+<tr class="memitem:a985872c14d969f8fb63cabe49a771a3e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a985872c14d969f8fb63cabe49a771a3e"></a>
+const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>right_bottom</b> () const </td></tr>
 <tr class="memitem:ace05d4e6c2c9de80d33d698d4507556b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace05d4e6c2c9de80d33d698d4507556b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>in_bounds_of</b> (const <a class="el" href="classgame_1_1_bounded_box2.html">BoundedBox2</a> &amp;other) const </td></tr>
 <tr class="memitem:a006e99bd9921addfb7b9e21791679267"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a006e99bd9921addfb7b9e21791679267"></a>
@@ -143,6 +143,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:af7dde5d42760dbf487224c3b30a310a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes the box bigger so that the point p fits into it. <br/></td></tr>
 <tr class="memitem:a21475351aa83778f172c9e7a1387b1bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_bounded_box2.html#a21475351aa83778f172c9e7a1387b1bd">clear_box</a> (const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;v)</td></tr>
 <tr class="memdesc:a21475351aa83778f172c9e7a1387b1bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes the box a point particle.  <a href="#a21475351aa83778f172c9e7a1387b1bd"></a><br/></td></tr>
+<tr class="memitem:a159926e57bac818400ed142c42f66e2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a159926e57bac818400ed142c42f66e2c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>move</b> (const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;delta)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="friends"></a>
 Friends</h2></td></tr>
@@ -192,7 +194,7 @@ ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 24 2014 18:12:07 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 14 2015 07:43:34 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

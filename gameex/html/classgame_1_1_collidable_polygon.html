@@ -118,40 +118,32 @@ typedef std::unique_ptr<br class="typebreak"/>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aecfd5a0b0434b2aae95a3df2b865d5c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aecfd5a0b0434b2aae95a3df2b865d5c8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CollidablePolygon</b> (const unsigned char type, const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;start)</td></tr>
-<tr class="memitem:a23e13da1504534da69e15a40440a4f37"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23e13da1504534da69e15a40440a4f37"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CollidablePolygon</b> (const unsigned char type, const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;start, const vector&lt; <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &gt; &amp;path)</td></tr>
+<tr class="memitem:ab000a67720dc1f9dc6ee12fb31393e14"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab000a67720dc1f9dc6ee12fb31393e14"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CollidablePolygon</b> (const object_t type, const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;start=Vector2::origin)</td></tr>
+<tr class="memitem:ad1bd317516fdff650a602365aa550573"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1bd317516fdff650a602365aa550573"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CollidablePolygon</b> (const object_t type, const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;start, std::initializer_list&lt; <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &gt; path)</td></tr>
 <tr class="memitem:aa2aef7ce4a134796b20c968b30ad1368"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2aef7ce4a134796b20c968b30ad1368"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>collides_with</b> (const <a class="el" href="classgame_1_1_collidable_polygon.html">CollidablePolygon</a> &amp;other) const </td></tr>
-<tr class="memitem:adb46cbca9dd1cbe3db952a34fae63a8e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb46cbca9dd1cbe3db952a34fae63a8e"></a>
-unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const </td></tr>
-<tr class="inherit_header pub_methods_classgame_1_1_bounded_box2"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgame_1_1_bounded_box2')"><img src="closed.png" alt="-"/>&nbsp;Public Member Functions inherited from <a class="el" href="classgame_1_1_bounded_box2.html">game::BoundedBox2</a></td></tr>
-<tr class="memitem:a58723a492d3e20ca28727f26e3fb7da4 inherit pub_methods_classgame_1_1_bounded_box2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58723a492d3e20ca28727f26e3fb7da4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_bounded_box2.html#a58723a492d3e20ca28727f26e3fb7da4">BoundedBox2</a> (const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;lt, const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;rb)</td></tr>
-<tr class="memdesc:a58723a492d3e20ca28727f26e3fb7da4 inherit pub_methods_classgame_1_1_bounded_box2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for left top and right bottom. <br/></td></tr>
-<tr class="memitem:a2d5a028246109ec20c8731e8033853c6 inherit pub_methods_classgame_1_1_bounded_box2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d5a028246109ec20c8731e8033853c6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_bounded_box2.html#a2d5a028246109ec20c8731e8033853c6">BoundedBox2</a> (const Scalar x, const Scalar y, const Scalar w, const Scalar h)</td></tr>
-<tr class="memdesc:a2d5a028246109ec20c8731e8033853c6 inherit pub_methods_classgame_1_1_bounded_box2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for left top and size dimensions. <br/></td></tr>
-<tr class="memitem:acdea8ef20cfed7178956047d4e6b63da inherit pub_methods_classgame_1_1_bounded_box2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acdea8ef20cfed7178956047d4e6b63da"></a>
-const <a class="el" href="classgame_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>left_top</b> () const </td></tr>
-<tr class="memitem:a4fc384481ebf6e8156f8bba909a2dabd inherit pub_methods_classgame_1_1_bounded_box2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4fc384481ebf6e8156f8bba909a2dabd"></a>
-const <a class="el" href="classgame_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>right_bottom</b> () const </td></tr>
-<tr class="memitem:ace05d4e6c2c9de80d33d698d4507556b inherit pub_methods_classgame_1_1_bounded_box2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace05d4e6c2c9de80d33d698d4507556b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>in_bounds_of</b> (const <a class="el" href="classgame_1_1_bounded_box2.html">BoundedBox2</a> &amp;other) const </td></tr>
-<tr class="memitem:a006e99bd9921addfb7b9e21791679267 inherit pub_methods_classgame_1_1_bounded_box2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a006e99bd9921addfb7b9e21791679267"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_valid</b> () const </td></tr>
-<tr class="memitem:a9848926faf01b824428356019a755729 inherit pub_methods_classgame_1_1_bounded_box2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9848926faf01b824428356019a755729"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_empty_box</b> () const </td></tr>
-<tr class="memitem:a71237cf7c272adc4710a941132fbe0e2 inherit pub_methods_classgame_1_1_bounded_box2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71237cf7c272adc4710a941132fbe0e2"></a>
-const Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>left</b> () const </td></tr>
-<tr class="memitem:a96da657eea684c41712233831a611994 inherit pub_methods_classgame_1_1_bounded_box2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96da657eea684c41712233831a611994"></a>
-const Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>right</b> () const </td></tr>
-<tr class="memitem:a6eb03eb1260f655bd8f6e7a6d670eba7 inherit pub_methods_classgame_1_1_bounded_box2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6eb03eb1260f655bd8f6e7a6d670eba7"></a>
-const Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>bottom</b> () const </td></tr>
-<tr class="memitem:ad7731a8bb0d5c532cb5101d653acad48 inherit pub_methods_classgame_1_1_bounded_box2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7731a8bb0d5c532cb5101d653acad48"></a>
-const Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>top</b> () const </td></tr>
-<tr class="inherit_header pub_methods_classgame_1_1_polygon"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgame_1_1_polygon')"><img src="closed.png" alt="-"/>&nbsp;Public Member Functions inherited from <a class="el" href="classgame_1_1_polygon.html">game::Polygon</a></td></tr>
+<tr class="memitem:adfc123e0f2419cf0a4f416229c010d3d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfc123e0f2419cf0a4f416229c010d3d"></a>
+object_t&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const </td></tr>
+<tr class="memitem:a3f50ee6878408b6fdd3d8aa7faefd932"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f50ee6878408b6fdd3d8aa7faefd932"></a>
+const <a class="el" href="classgame_1_1_bounded_box2.html">BoundedBox2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>box</b> () const </td></tr>
+<tr class="memitem:ac9f5cce1cd7a643ed80d77f1d40e14d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9f5cce1cd7a643ed80d77f1d40e14d1"></a>
+const <a class="el" href="classgame_1_1_polygon.html">Polygon</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>poly</b> () const </td></tr>
+<tr class="memitem:a3a9c7c4024170178891d7ec07ab775fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a9c7c4024170178891d7ec07ab775fd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;v)</td></tr>
+<tr class="memitem:ab8c0b3a146fff5db63a1b565f31d60ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8c0b3a146fff5db63a1b565f31d60ca"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_start</b> (const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;v)</td></tr>
+<tr class="memitem:aaad9dfb09cf6179add5e4ae83ca75220"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaad9dfb09cf6179add5e4ae83ca75220"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>move_to</b> (const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;v)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ad3edcdd7bbdfe7959fa26905a6b90c0a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3edcdd7bbdfe7959fa26905a6b90c0a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>on_add</b> (const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;value) override</td></tr>
+<tr class="memitem:a175334e3517e0ba759a68f16e7d567c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a175334e3517e0ba759a68f16e7d567c2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>on_clear</b> (const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;initial) override</td></tr>
+<tr class="inherit_header pub_methods_classgame_1_1_polygon"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgame_1_1_polygon')"><img src="closed.png" alt="-"/>&nbsp;Protected Member Functions inherited from <a class="el" href="classgame_1_1_polygon.html">game::Polygon</a></td></tr>
 <tr class="memitem:a10f8a459d5fb26bcdeff56e04e607dd1 inherit pub_methods_classgame_1_1_polygon"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10f8a459d5fb26bcdeff56e04e607dd1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Polygon</b> (const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;start)</td></tr>
 <tr class="memitem:abd210882dcfa61fc278ab65988acb1c9 inherit pub_methods_classgame_1_1_polygon"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd210882dcfa61fc278ab65988acb1c9"></a>
@@ -172,23 +164,51 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>point_count</b> () 
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_empty</b> () const </td></tr>
 <tr class="memitem:a6b0d444d76e92498b4080420ee22da95 inherit pub_methods_classgame_1_1_polygon"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b0d444d76e92498b4080420ee22da95"></a>
 const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (size_t i) const </td></tr>
+<tr class="memitem:ae756650aad730d2121a8edef1368eed2 inherit pro_methods_classgame_1_1_polygon"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae756650aad730d2121a8edef1368eed2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>on_add</b> (const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;value)</td></tr>
+<tr class="memitem:ab3de407d418a8674fb239fc822eadd9a inherit pro_methods_classgame_1_1_polygon"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3de407d418a8674fb239fc822eadd9a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>on_clear</b> (const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;initial)</td></tr>
+<tr class="memitem:ac4f6d76a11abff97b076945e7347aef1 inherit pro_methods_classgame_1_1_polygon"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4f6d76a11abff97b076945e7347aef1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>move</b> (const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;delta)</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:ad3edcdd7bbdfe7959fa26905a6b90c0a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3edcdd7bbdfe7959fa26905a6b90c0a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>on_add</b> (const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;value) override</td></tr>
-<tr class="memitem:a175334e3517e0ba759a68f16e7d567c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a175334e3517e0ba759a68f16e7d567c2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>on_clear</b> (const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;initial) override</td></tr>
-<tr class="inherit_header pro_methods_classgame_1_1_bounded_box2"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classgame_1_1_bounded_box2')"><img src="closed.png" alt="-"/>&nbsp;Protected Member Functions inherited from <a class="el" href="classgame_1_1_bounded_box2.html">game::BoundedBox2</a></td></tr>
+<tr class="heading"><td colspan="2"><h2><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_methods_classgame_1_1_bounded_box2"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgame_1_1_bounded_box2')"><img src="closed.png" alt="-"/>&nbsp;Private Member Functions inherited from <a class="el" href="classgame_1_1_bounded_box2.html">game::BoundedBox2</a></td></tr>
+<tr class="memitem:a58723a492d3e20ca28727f26e3fb7da4 inherit pub_methods_classgame_1_1_bounded_box2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58723a492d3e20ca28727f26e3fb7da4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_bounded_box2.html#a58723a492d3e20ca28727f26e3fb7da4">BoundedBox2</a> (const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;lt, const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;rb)</td></tr>
+<tr class="memdesc:a58723a492d3e20ca28727f26e3fb7da4 inherit pub_methods_classgame_1_1_bounded_box2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for left top and right bottom. <br/></td></tr>
+<tr class="memitem:a2d5a028246109ec20c8731e8033853c6 inherit pub_methods_classgame_1_1_bounded_box2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d5a028246109ec20c8731e8033853c6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_bounded_box2.html#a2d5a028246109ec20c8731e8033853c6">BoundedBox2</a> (const Scalar x, const Scalar y, const Scalar w, const Scalar h)</td></tr>
+<tr class="memdesc:a2d5a028246109ec20c8731e8033853c6 inherit pub_methods_classgame_1_1_bounded_box2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for left top and size dimensions. <br/></td></tr>
+<tr class="memitem:a027ff6ed78548a7836e8143b7987ee16 inherit pub_methods_classgame_1_1_bounded_box2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a027ff6ed78548a7836e8143b7987ee16"></a>
+const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>left_top</b> () const </td></tr>
+<tr class="memitem:a985872c14d969f8fb63cabe49a771a3e inherit pub_methods_classgame_1_1_bounded_box2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a985872c14d969f8fb63cabe49a771a3e"></a>
+const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>right_bottom</b> () const </td></tr>
+<tr class="memitem:ace05d4e6c2c9de80d33d698d4507556b inherit pub_methods_classgame_1_1_bounded_box2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace05d4e6c2c9de80d33d698d4507556b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>in_bounds_of</b> (const <a class="el" href="classgame_1_1_bounded_box2.html">BoundedBox2</a> &amp;other) const </td></tr>
+<tr class="memitem:a006e99bd9921addfb7b9e21791679267 inherit pub_methods_classgame_1_1_bounded_box2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a006e99bd9921addfb7b9e21791679267"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_valid</b> () const </td></tr>
+<tr class="memitem:a9848926faf01b824428356019a755729 inherit pub_methods_classgame_1_1_bounded_box2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9848926faf01b824428356019a755729"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_empty_box</b> () const </td></tr>
+<tr class="memitem:a71237cf7c272adc4710a941132fbe0e2 inherit pub_methods_classgame_1_1_bounded_box2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71237cf7c272adc4710a941132fbe0e2"></a>
+const Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>left</b> () const </td></tr>
+<tr class="memitem:a96da657eea684c41712233831a611994 inherit pub_methods_classgame_1_1_bounded_box2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96da657eea684c41712233831a611994"></a>
+const Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>right</b> () const </td></tr>
+<tr class="memitem:a6eb03eb1260f655bd8f6e7a6d670eba7 inherit pub_methods_classgame_1_1_bounded_box2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6eb03eb1260f655bd8f6e7a6d670eba7"></a>
+const Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>bottom</b> () const </td></tr>
+<tr class="memitem:ad7731a8bb0d5c532cb5101d653acad48 inherit pub_methods_classgame_1_1_bounded_box2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7731a8bb0d5c532cb5101d653acad48"></a>
+const Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>top</b> () const </td></tr>
 <tr class="memitem:af7dde5d42760dbf487224c3b30a310a4 inherit pro_methods_classgame_1_1_bounded_box2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7dde5d42760dbf487224c3b30a310a4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_bounded_box2.html#af7dde5d42760dbf487224c3b30a310a4">adjust_box</a> (const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;p)</td></tr>
 <tr class="memdesc:af7dde5d42760dbf487224c3b30a310a4 inherit pro_methods_classgame_1_1_bounded_box2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes the box bigger so that the point p fits into it. <br/></td></tr>
 <tr class="memitem:a21475351aa83778f172c9e7a1387b1bd inherit pro_methods_classgame_1_1_bounded_box2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1_bounded_box2.html#a21475351aa83778f172c9e7a1387b1bd">clear_box</a> (const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;v)</td></tr>
 <tr class="memdesc:a21475351aa83778f172c9e7a1387b1bd inherit pro_methods_classgame_1_1_bounded_box2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes the box a point particle.  <a href="#a21475351aa83778f172c9e7a1387b1bd"></a><br/></td></tr>
+<tr class="memitem:a159926e57bac818400ed142c42f66e2c inherit pro_methods_classgame_1_1_bounded_box2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a159926e57bac818400ed142c42f66e2c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>move</b> (const <a class="el" href="classgame_1_1_vector2.html">Vector2</a> &amp;delta)</td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>A <a class="el" href="classgame_1_1_polygon.html" title="A two dimensional figure with at least one point.">Polygon</a> with a <a class="el" href="classgame_1_1_bounded_box2.html" title="A two dimensional bound.">BoundedBox2</a>. </p>
-<p>It is typically added to <a class="el" href="classgame_1_1_collision_manager.html">CollisionManager</a>. </p>
+<p>Instances can be added to a <a class="el" href="classgame_1_1_collision_manager.html">CollisionManager</a>. </p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>collisions2d.h</li>
 <li>collisions2d.cpp</li>
@@ -196,7 +216,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 24 2014 18:12:07 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 14 2015 07:43:34 for GameEx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

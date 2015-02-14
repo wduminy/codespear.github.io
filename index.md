@@ -9,6 +9,6 @@ tagline: ramblings, rants and other stuff
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> {{ post.excerpt }}</li>
   {% endfor %}
 </ul>
-
-Also here: [The GameEx Documentation](/gameex/html/)
+<!-- i removed the link to the docs because I have not been working on gameex for a while; and I have some new ideas around the gamelib -->
+<!-- Also here: [The GameEx Documentation](/gameex/html/) -->
 

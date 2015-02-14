@@ -80,86 +80,10 @@
 	"buffers":
 	[
 		{
-			"file": "_drafts/draft.md",
+			"file": "_drafts/writing-game-music.md",
 			"settings":
 			{
-				"buffer_size": 399,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "index.md",
-			"settings":
-			{
-				"buffer_size": 355,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css",
-			"settings":
-			{
-				"buffer_size": 112442,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "The first bad commit could be any of:\n517539d3bda2e60437e74a4076fa475a3ee7e24d\nff3b24cc47d0658c411167d346fcc73836722a85",
-			"settings":
-			{
-				"buffer_size": 119,
-				"line_ending": "Windows",
-				"name": "The first bad commit could be any of:"
-			}
-		},
-		{
-			"contents": "git checkout workflow code/cuffserver/src/com/vastech/cuff/server/signalanalyser_001.sql\n",
-			"file": "/G/my_diff.cmd",
-			"file_size": 510,
-			"file_write_time": 130343525214583919,
-			"settings":
-			{
-				"buffer_size": 89,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/G/code/cuffapi/proto/casesapi.proto",
-			"settings":
-			{
-				"buffer_size": 2945,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/programs/eclipse-rcp-kepler-SR1-win32/eclipse/eclipse.ini",
-			"settings":
-			{
-				"buffer_size": 508,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/development/github/artiboard/.gitignore",
-			"settings":
-			{
-				"buffer_size": 139,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "_drafts/better-camera.md",
-			"settings":
-			{
-				"buffer_size": 2258,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "_config.yml",
-			"settings":
-			{
-				"buffer_size": 4277,
+				"buffer_size": 284,
 				"line_ending": "Windows"
 			}
 		}
@@ -262,6 +186,7 @@
 		"height": 239.0,
 		"history":
 		[
+			"import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
 			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
 			"make",
 			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')"
@@ -276,9 +201,24 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io"
+	],
 	"file_history":
 	[
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_drafts/draft.md",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/index.md",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css",
+		"/G/my_diff.cmd",
+		"/G/code/cuffapi/proto/casesapi.proto",
+		"/C/programs/eclipse-rcp-kepler-SR1-win32/eclipse/eclipse.ini",
+		"/C/development/github/artiboard/.gitignore",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_drafts/better-camera.md",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_drafts/cpp-map.md",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_plugins/plantuml.rb",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_posts/2013-08-11-first-impressions.md",
+		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_config.yml",
 		"/C/Users/willemd/Documents/GitHub/invest/InvestLynx/.project",
 		"/G/code/install/my_deploy.ifl",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/.nojekyll",
@@ -286,13 +226,11 @@
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_drafts/terrain-lighting-opengl.md",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_posts/2013-07-02-heightmap-from-concept-to-template.md",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_drafts/2013-09-09-notable-make-features.md",
-		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_drafts/draft.md",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_drafts/render-blender-model.md",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_drafts/car-racing-game.md",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_drafts/writing-game-music.md",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_posts/2013-08-18-terrain-rendering-with-GLSL.md",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_drafts/heightmap-from-concept-to-template.md",
-		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_posts/2013-08-11-first-impressions.md",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/serve.cmd",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_includes/JB/comments-providers/intensedebate",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/codespear.sublime-project",
@@ -306,10 +244,8 @@
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_includes/themes/twitter/default.html",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/assets/css/pygment.css",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/css/pygments.css",
-		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_config.yml",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/pages.html",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_layouts/post.html",
-		"/C/Users/willemd/Documents/GitHub/codespear.github.io/index.md",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_posts/core-samples/2011-12-29-jekyll-introduction.md",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_posts/2013-08-11-what-i-did-first.md",
 		"/C/Users/willemd/Documents/GitHub/codespear.github.io/_posts/2013-08-11-first-post.md",
@@ -525,250 +461,24 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "_drafts/draft.md",
+					"file": "_drafts/writing-game-music.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 399,
+						"buffer_size": 284,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "index.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 355,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								345,
-								345
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 112442,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9013,
-								9013
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4400.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 119,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								119,
-								79
-							]
-						],
-						"settings":
-						{
-							"auto_name": "The first bad commit could be any of:",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/G/my_diff.cmd",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 89,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								87,
-								87
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/G/code/cuffapi/proto/casesapi.proto",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2945,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								485,
-								485
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/C/programs/eclipse-rcp-kepler-SR1-win32/eclipse/eclipse.ini",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 508,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								508,
-								508
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 4.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/C/development/github/artiboard/.gitignore",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 139,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "_drafts/better-camera.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2258,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								268,
-								268
+								283,
+								283
 							]
 						],
 						"settings":
@@ -780,36 +490,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "_config.yml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4277,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3913,
-								3913
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -972,6 +652,7 @@
 		],
 		"width": 392.0
 	},
+	"selected_group": 0,
 	"settings":
 	{
 	},
