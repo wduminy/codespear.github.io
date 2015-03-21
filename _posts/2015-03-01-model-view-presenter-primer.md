@@ -1,7 +1,7 @@
 ---
 layout: post
 category: programming
-tags: [user interface, WTL]
+tags: [WTL, MVP]
 excerpt: The humble file path program
 ---
 

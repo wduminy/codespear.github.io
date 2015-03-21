@@ -1,7 +1,7 @@
 ---
 layout: post
-category: design patterns
-tags: [user interface]
+category: user interface
+tags: [MVP]
 excerpt: An introduction to model-view-presenter
 ---
 ## The essence of the problem
@@ -39,7 +39,7 @@ In addition to showing selection state, the view is (most of the time) directly 
 
 Thus we now have an example of _design feedback_.  The design of an information view may now introduce cues that changes the way information is rendered.  Do not be fooled: these cues are as important as any primary cues.  These information views are likely to become concepts in the model as well.
 
-## What this the model?
+## What's the model?
 Do we understand the model now?  It is a collection of concepts that must be implemented.  The model has concept for selection; a concept for each element that can be selected, it is likely to have a concept for every information view.   
 
 The model is also responsible for _persistence_.  During his interaction with the program, the user creates new instances of concepts and updates existing instances -- and he might want very well these changes to be permanent. The model is responsible for writing data to  storage and reading data from that storage.
