@@ -5,7 +5,7 @@ tags: [terrain, GLSL]
 excerpt: Render a terrain using GLSL 
 ---
 <img src="http://lh3.ggpht.com/-2oU6PugYIbU/UeHGZOVlRVI/AAAAAAAAAPY/DHO9xl1NJZc/screen_thumb.png?imgmax=800" style="float:right"/>
-In the previous post about the <a href="(% post_url 2013-08-18-terrain-rendering-with-GLSL %}">heighmap concept</a>  you saw how to create a C++ class template for a heightmap.  This post is the next step: you'll gain an understanding of how to use OpenGL to render a terrain that uses that heightmap.  The screenshot on the right shows what you'll have if you follow this post carefully.  The screenshot is produced from the heightmap concept and the BMP file introduced in the previous post. 
+In the previous post about the <a href="{% post_url 2013-08-18-terrain-rendering-with-GLSL %}">heightmap concept</a>  you saw how to create a C++ class template for a heightmap.  This post is the next step: you'll gain an understanding of how to use OpenGL to render a terrain that uses that heightmap.  The screenshot on the right shows what you'll have if you follow this post carefully.  The screenshot is produced from the heightmap concept and the BMP file introduced in the previous post. 
 
 Broadly speaking, the terrain is rendered in two steps: 1) create the geometry 2) send the geometry to OpenGL.   The first step in technology agnostic and and could be of use even if you do not like OpenGL.   
 

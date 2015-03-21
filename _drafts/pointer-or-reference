@@ -1,0 +1,7 @@
+layout: post
+category: programming
+tags: [C++]
+excerpt: C++ arguments : pointers of references
+---
+
+When creating a function in C++, should the argument be a pointer or a reference; or maybe a unique pointer?
