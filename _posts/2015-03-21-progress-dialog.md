@@ -5,7 +5,7 @@ tags: [WTL]
 excerpt: A dialog to show job progress
 ---
 
-It happens sometimes that a [desktop application](http://www.pcmag.com/encyclopedia/term/41158/desktop-application) starts a  _job_ that can take some time to complete.  This job should not hold up the _user interface thread_; it it does the application will be unresponsive until the job completes.  In this post we explore a minimal approach to running a job: we show a [modal dialog](http://en.wikipedia.org/wiki/Modal_window) which we call a `PrpgressDialog`.  This dialog shows how the job is progressing; and allows the user to cancel the job. 
+It happens sometimes that a [desktop application](http://www.pcmag.com/encyclopedia/term/41158/desktop-application) starts a  _job_ that can take some time to complete.  This job should not hold up the _user interface thread_; if it does the application becomes unresponsive until the job completes.  In this post we explore a minimal approach to running a job: we show a [modal dialog](http://en.wikipedia.org/wiki/Modal_window) which we call a `ProgressDialog`.  This dialog shows how the job is progressing; and allows the user to cancel the job. 
 
 ## The general idea
 Let us call the thread that starts the `Job`, the _parent thread_.  The worker thread sends a `JobReport` to the parent thread, and the parent thread can call the `Job::cancel()` [member function](https://msdn.microsoft.com/en-us/library/fk812w4w.aspx). The client observes the job for updates.

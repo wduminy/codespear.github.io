@@ -88,6 +88,14 @@
 			}
 		},
 		{
+			"file": "_drafts/contributing-to-swt.md",
+			"settings":
+			{
+				"buffer_size": 1614,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "_posts/2013-07-02-heightmap-from-concept-to-template.md",
 			"settings":
 			{
@@ -97,9 +105,14 @@
 		}
 	],
 	"build_system": "Packages/C++/C++.sublime-build",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 129.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -475,7 +488,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -491,8 +504,8 @@
 						"selection":
 						[
 							[
-								2397,
-								2397
+								97,
+								0
 							]
 						],
 						"settings":
@@ -500,14 +513,42 @@
 							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2016.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_drafts/contributing-to-swt.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1614,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1429,
+								1391
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 816.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"file": "_posts/2013-07-02-heightmap-from-concept-to-template.md",
 					"semi_transient": true,
 					"settings":
@@ -529,7 +570,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 840.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -577,6 +618,7 @@
 	{
 		"height": 0.0
 	},
+	"pinned_build_system": "",
 	"project": "codespear.sublime-project",
 	"replace":
 	{
@@ -586,6 +628,7 @@
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -666,6 +709,7 @@
 	"select_project":
 	{
 		"height": 625.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -678,6 +722,7 @@
 	"select_symbol":
 	{
 		"height": 127.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
