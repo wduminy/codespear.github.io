@@ -19,12 +19,10 @@ Current problem: I think if you have 64 bit windows you have to get 64bit jdk; n
 ** Stuff **
 Before you can be accepted you must sign the [Eclipse Foundation Contributor License Agreement](http://www.eclipse.org/legal/CLA.php).  A relatively simple process.
 
-
-
 The [developer page](https://projects.eclipse.org/projects/eclipse.platform.swt/developer) mentions that they use Gerrit.  But there is little help.  
 
 The [SWT project page](https://www.eclipse.org/swt/) is a little more help, especially the [tools page](https://www.eclipse.org/swt/tools.php).  There is also more of on the [how to fix a bug page](https://www.eclipse.org/swt/fixbugs.php)
- - Use the most basic eclipse
+ - Use the most basic eclipse (I think if you are running windows 64 bit you will have to use 64 bit eclipse).
  - [JniGen](https://www.eclipse.org/swt/jnigen.php)
  - [Sleak](http://www.eclipse.org/articles/swt-design-2/sleak.htm)
  - SWT Spy plug-in
