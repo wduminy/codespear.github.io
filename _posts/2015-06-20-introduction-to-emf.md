@@ -10,9 +10,9 @@ excerpt: What is EMF all about?
   The easiest way to install EMF is to use the [all in one update zip file](https://www.eclipse.org/modeling/emf/downloads/) and install this zip file using the usual Eclipse *add plug-in* feature.
 
   You use EMF by roughly following these steps:
-  1. Create an *Empty EMF project* using the EMF project wizard.
-  2. Create an   [Ecore](https://www.eclipse.org/ecoretools/) model.  Ecore is a modeling language that is a subset of [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language).  
-  3. From this model you generate Java code and an [Eclipse plug-in](https://wiki.eclipse.org/FAQ_What_is_a_plug-in%3F).
+    1. Create an *Empty EMF project* using the EMF project wizard.
+    2. Create an   [Ecore](https://www.eclipse.org/ecoretools/) model.  Ecore is a modeling language that is a subset of [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language).  
+    3. From this model you generate Java code and an [Eclipse plug-in](https://wiki.eclipse.org/FAQ_What_is_a_plug-in%3F).
 
 ## The Ecore Model
   Create the `ecore file` in the `model` directory of the project. The default editor provides a tree-based view of the Ecore model.  Select elements in this editor can be update using the properties view.
