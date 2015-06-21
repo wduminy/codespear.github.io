@@ -1,22 +1,21 @@
 ---
 layout: post
 category: architecture
-tags: [Eclipse,Java]
+tags: [modeling,EMF]
 excerpt: What is EMF all about?
 ---
 
-  The Eclipse modeling framework (EMF) is a modeling framework and code generation facility for building tools and other applications based on a structured data model. From a model specification described in [XMI](https://en.wikipedia.org/wiki/XML_Metadata_Interchange), EMF provides tools and runtime support to produce a set of Java classes for the model, along with a set of adapter classes that enable viewing and command-based editing of the model, and a basic graphical editor.
+The Eclipse modeling framework (EMF) is a modeling framework and code generation facility for building tools and other applications based on a structured data model. From a model specification described in [XMI](https://en.wikipedia.org/wiki/XML_Metadata_Interchange), EMF provides tools and runtime support to produce a set of Java classes for the model, along with a set of adapter classes that enable viewing and command-based editing of the model, and a basic graphical editor.
 
-  The easiest way to install EMF is to use the [all in one update zip file](https://www.eclipse.org/modeling/emf/downloads/) and install this zip file using the usual Eclipse *add plug-in* feature.
+The easiest way to install EMF is to use the [all in one update zip file](https://www.eclipse.org/modeling/emf/downloads/) and install this zip file using the usual Eclipse *add plug-in* feature.
 
-  You use EMF by roughly following these steps:
-    1. Create an *Empty EMF project* using the EMF project wizard.
-    2. Create an   [Ecore](https://www.eclipse.org/ecoretools/) model.  Ecore is a modeling language that is a subset of [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language).  
-    3. From this model you generate Java code and an [Eclipse plug-in](https://wiki.eclipse.org/FAQ_What_is_a_plug-in%3F).
+You use EMF by roughly following these steps:
+  1. Create an *Empty EMF project* using the EMF project wizard.
+  2. Create an   [Ecore](https://www.eclipse.org/ecoretools/) model.  Ecore is a modeling language that is a subset of [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language).  
+  3. From this model you generate Java code and an [Eclipse plug-in](https://wiki.eclipse.org/FAQ_What_is_a_plug-in%3F).
 
 ## The Ecore Model
   Create the `ecore file` in the `model` directory of the project. The default editor provides a tree-based view of the Ecore model.  Select elements in this editor can be update using the properties view.
-
 
   The idea of the model is to build up a structured hierarchy. This structure is called a *containment tree*.  Typically the model has one class that represents an object that contains instances of other classes of the model. Thus you are like to have a class called something like *Diagram* as the root of the containment tree.
 
