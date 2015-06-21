@@ -1,11 +1,11 @@
 ---
 layout: post
 category: architecture
-tags: [modeling,EMF]
+tags: [modeling, Graphiti]
 excerpt: What is Graphiti all about?
 ---
 
-Graphiti enables rapid development of diagram editors for domain models.  Although it is based on EMF (see a <a href="{% post_url 2015-02-21-model-view-presenter%}">previous post about EMF</a> for more information), Graphiti can also work with any Java based domain objects.  A useful feature is that it also includes automatic layout facilities.  
+Graphiti enables rapid development of diagram editors for domain models.  Although it is based on EMF (see a <a href="{% post_url 2015-06-20-introduction-to-emf%}">previous post about EMF</a> for more information), Graphiti can also work with any Java based domain objects.
 
 Graphiti is an alternative to [GMF](https://www.eclipse.org/modeling/gmp/).  The key difference is that GMF uses code generation as a key architectural concepts, whereas Graphiti works against Java interfaces.
 
@@ -27,11 +27,9 @@ Internally the agent implements `features`. There is a `feature provider` that s
 
 The first step is to create a plug-in project using the *Plugin with Graphiti Editor* template.  This template is not available to for stand-alone applications.  
 
-The wizard creates a `DiagramTypeProvider` and a `FeatureProvider`, along with their declarations in  `plugin.xml`.  The wizard is very useful when you have a simple diagram that contains objects of one type and allows links between those types.  If you do not have such a simple model, you can still use the wizard as a statring point and replace the code as you start implementing your own Graphiti editor.  I suspect the wizard is likely to improve in the future.  
+The wizard creates a `DiagramTypeProvider` and a `FeatureProvider`, along with their declarations in  `plugin.xml`.  The wizard is very useful when you have a simple diagram that contains objects of one type and allows links between those types.  If you do not have such a simple model, you can still use the wizard as a starting point and replace the code as you implement your own Graphiti editor.  
 
-
-## TODO
-https://www.eclipse.org/forums/index.php/t/236324/
+You develop your editor by adding feature classes.  Each feature class is registered with the `FeatureProvider` and it implements an interface defined in the Graphiti framework.
 
 ## References
   * [Graphiti](https://www.eclipse.org/graphiti/)

@@ -5,7 +5,7 @@ tags: [modeling,EMF]
 excerpt: What is EMF all about?
 ---
 
-The Eclipse modeling framework (EMF) is a modeling framework and code generation facility for building tools and other applications based on a structured data model. From a model specification described in [XMI](https://en.wikipedia.org/wiki/XML_Metadata_Interchange), EMF provides tools and runtime support to produce a set of Java classes for the model, along with a set of adapter classes that enable viewing and command-based editing of the model, and a basic graphical editor.
+The Eclipse modeling framework ([EMF](https://en.wikipedia.org/wiki/Eclipse_Modeling_Framework)) is a modeling framework and code generation facility for building tools and other applications based on a structured data model. From a model specification described in [XMI](https://en.wikipedia.org/wiki/XML_Metadata_Interchange), EMF provides tools and runtime support to produce a set of Java classes for the model, along with a set of adapter classes that enable viewing and command-based editing of the model, and a basic graphical editor.
 
 The easiest way to install EMF is to use the [all in one update zip file](https://www.eclipse.org/modeling/emf/downloads/) and install this zip file using the usual Eclipse *add plug-in* feature.
 
@@ -37,7 +37,7 @@ You use EMF by roughly following these steps:
   The most important properties of an `EAttribute` is it's `name` and it's `EAttribute Type`
 
 ### The EReference
-  An `EReference` is an association between to classes.  If you set `containment` to `true` this means that the reference contributes to the containment tree.
+  An `EReference` is an association between two classes.  If you set `containment` to `true` this means that the reference contributes to the containment tree.
 
   The value for `UpperBound` is `-1` when you want to specify a *many association*.
 

@@ -8,7 +8,6 @@ excerpt: Attempt to contribute to SWT
 Getting the development environment up and running is the first step.  
 The docs suggest that the basic version is fine; but it is better to download the eclipse for rcp developers.
 Basically you need to download the basic version of Eclipse and these to repositories:
-
  - https://github.com/eclipse/eclipse.platform.swt.binaries
  - https://github.com/eclipse/eclipse.platform.swt
 (Do we need both?)
@@ -27,4 +26,4 @@ The [SWT project page](https://www.eclipse.org/swt/) is a little more help, espe
  - [Sleak](http://www.eclipse.org/articles/swt-design-2/sleak.htm)
  - SWT Spy plug-in
 
-There there is some information about [using SWT from GIT](https://www.eclipse.org/swt/git.php) 
+There there is some information about [using SWT from GIT](https://www.eclipse.org/swt/git.php)
