@@ -1,7 +1,7 @@
 ---
 layout: post
 category: architecture
-tags: [modeling,EMF]
+tags: [modeling, EMF]
 ---
 The Eclipse modeling framework ([EMF](https://en.wikipedia.org/wiki/Eclipse_Modeling_Framework)) is a modeling framework and code generation facility for building tools and other applications based on a structured data model.
 
