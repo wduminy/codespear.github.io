@@ -6,9 +6,8 @@ tags: [terrain]
 In this post we take a look at how we can determine the location of a point on the surface of a terrain.
 
 
-<img src="/assets/images/2013/terrain-surface.jpg" style="float:right"/>
-
 Recall from the <a href="{% post_url 2013-07-13-terrain-rendering-basics %}">terrain basics post</a> that we decided on a coordinate system where \\(z\\) points upwards, \\(x\\) points west and \\(y\\) points south.  So using this coordinate system we need to determine the \\(z\\) value, given the \\((x,y)\\) world coordinate.
+<img src="/assets/images/2013/terrain-surface.jpg" style="float:right"/>
 
 It helps to think of this problem as a two step process. First, you need to identify the triangle in the heightmap for the coordinate \\((x,y)\\).  Then you find the point of intersection between the triangle's plane and the line that drops down vertically through \\((x,y)\\).   
 
