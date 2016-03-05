@@ -2,7 +2,7 @@
 layout: post
 category: graphics
 tags: [TBD]
-excerpt: TBD 
+excerpt: TBD
 ---
 # Background reading
 
@@ -35,4 +35,3 @@ Vertex normal: \\( N_v = \sum{N_s} / 6 \\)
 The vertices of a [heightmap](http://en.wikipedia.org/wiki/Heightmap) are always evenly spaced and never overlap. This makes it possible to break our 3-dimensional heightfield into two, 2-dimensional coordinate systems, one in the XY plane, and one in the ZY plane. We can then use the simple and well-known phrase “rise above run” from elementary geometry to compute the x and z component normals from each of our coordinate systems, while leaving the y-component one. Consider the line shown in figure 3.
 
 ## [OpenGL Terrain tutorial](http://www.videotutorialsrock.com/opengl_tutorial/terrain/text.php)
-

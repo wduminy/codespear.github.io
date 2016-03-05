@@ -2,7 +2,7 @@
 layout: post
 category: programming
 tags: [TBD]
-excerpt: TBD 
+excerpt: TBD
 ---
 
 http://codeincomplete.com/posts/2012/6/22/javascript_racer/

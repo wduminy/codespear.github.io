@@ -2,7 +2,7 @@
 layout: post
 category: graphics
 tags: [TBD]
-excerpt: TBD 
+excerpt: TBD
 ---
 
 
