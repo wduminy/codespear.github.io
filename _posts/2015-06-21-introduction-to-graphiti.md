@@ -3,10 +3,10 @@ layout: post
 category: architecture
 tags: [modeling, Graphiti]
 ---
-Graphiti enables rapid development of diagram editors for domain models.  Although it is based on EMF (see a <a href="{% post_url 2015-06-20-introduction-to-emf%}">previous post about EMF</a> for more information), Graphiti can also work with any Java based domain objects.
+[Graphiti](https://www.eclipse.org/graphiti/) enables rapid development of diagram editors for domain models.  Although it is based on EMF (see a <a href="{% post_url 2015-06-20-introduction-to-emf%}">previous post about EMF</a> for more information), Graphiti can also work with any Java-based domain objects.
 
 
-Graphiti is an alternative to [GMF](https://www.eclipse.org/modeling/gmp/).  The key difference is that GMF uses code generation as a key architectural concepts, whereas Graphiti works against Java interfaces.
+Graphiti is an alternative to [GMF](https://www.eclipse.org/modeling/gmp/).  The key difference is that GMF uses code generation as a key architectural concept, whereas Graphiti works against Java interfaces.
 
 The easiest way to install Graphiti is to use the [update site](https://www.eclipse.org/graphiti/download.php).
 
@@ -20,7 +20,7 @@ The two model components are synchronised via *update features*.  There is also 
 
 The `diagram type agent` is at the heart of a Graphiti based application.  While responding to user cues, it creates (or updates) elements in the `domain model` and elements in the `pictogram model`; as well as the links between them (i.e. the `link model`)
 
-Internally the agent implements `features`. There is a `feature provider` that supplies the list of features for a given context.  These features are the oprations that the end0user can perform on the model.
+Internally the agent implements `features`. There is a `feature provider` that supplies the list of features for a given context.  These features are the operations that the end0user can perform on the model.
 
 ## How to use Graphiti
 
