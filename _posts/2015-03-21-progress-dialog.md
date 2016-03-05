@@ -3,7 +3,7 @@ layout: post
 category: user interface
 tags: [WTL]
 ---
-In this post we explore a minimal approach to running a job: we show a [modal dialog](http://en.wikipedia.org/wiki/Modal_window) which we call a `ProgressDialog`.  This dialog shows how the job is progressing; and allows the user to cancel the job.
+In this post we explore a minimal approach to running a job: we show a [modal dialog](http://en.wikipedia.org/wiki/Modal_window) which we call a ProgressDialog.  This dialog shows how the job is progressing; and allows the user to cancel the job.
 
 
 It happens sometimes that a [desktop application](http://www.pcmag.com/encyclopedia/term/41158/desktop-application) starts a  _job_ that can take some time to complete.  This job should not hold up the _user interface thread_; if it does the application becomes unresponsive until the job completes.  
