@@ -2,10 +2,9 @@
 layout: post
 category: architecture
 tags: [modeling, Graphiti]
-excerpt: What is Graphiti all about?
 ---
-
 Graphiti enables rapid development of diagram editors for domain models.  Although it is based on EMF (see a <a href="{% post_url 2015-06-20-introduction-to-emf%}">previous post about EMF</a> for more information), Graphiti can also work with any Java based domain objects.
+
 
 Graphiti is an alternative to [GMF](https://www.eclipse.org/modeling/gmp/).  The key difference is that GMF uses code generation as a key architectural concepts, whereas Graphiti works against Java interfaces.
 

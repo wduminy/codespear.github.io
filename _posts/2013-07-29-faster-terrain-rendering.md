@@ -2,12 +2,12 @@
 layout: post
 category: graphics
 tags: [OpenGL,C++,terrain]
-excerpt: Use buffers to draw faster 
 ---
+In the previous post about the <a href="{% post_url 2013-07-13-terrain-rendering-basics %}">basics of terrain rendering</a> you saw a simple way to render a terrain in OpenGL.   In this post you'll see how to improve the performance of the render procedure.   
 
-In the previous post about the <a href="{% post_url 2013-07-13-terrain-rendering-basics %}">basics of terrain rendering</a> you saw a simple way to render a terrain in OpenGL.   In this post you'll see how to improve the performance of the render procedure.   On my computer, the original procedure measured 590 frames per second; and with the improvements shown here it measured a whopping 1017 frames per second.   That is nearly a 100% improvement.
+On my computer, the original procedure measured 590 frames per second; and with the improvements shown here it measured a whopping 1017 frames per second.   That is nearly a 100% improvement.
 
-Let me start by reviewing the original plan: it is shown in Listing 1.  This procedure traverses through all elements, calculates and sends each vertex to OpenGL.  The CPU does all the calculation work – and it does this every time the scene is rendered.  To be fair, the procedure is not all bad: it uses very little memory. 
+Let me start by reviewing the original plan: it is shown in Listing 1.  This procedure traverses through all elements, calculates and sends each vertex to OpenGL.  The CPU does all the calculation work – and it does this every time the scene is rendered.  To be fair, the procedure is not all bad: it uses very little memory.
 
 But what exactly is our memory overhead?  A float is 4 bytes.  As shown in the previous post, a 50x50 heightmap produces 5 000 vertices (during the triangular traverse).  So, if we store each vertex, we would need less than 60 kb (5 000 * 3 * 4) of memory on the GPU.   As a side effect: once we have the vertices on the GPU memory, we do not have to make the 5 000 calls o OpenGL.  And voila, we gain a lot of speed!
 
@@ -55,7 +55,7 @@ glBufferData(GL_ARRAY_BUFFER,b_size*sizeof(GLfloat), (void*) verts.data(),GL_STA
 glBindBuffer(GL_ARRAY_BUFFER, 0);
 {% endhighlight %}
 
-All that remains for you is to render the scene using the buffer.  This is done in Listing 4.  This procedure must be called inside the game loop for every render.  As before you tell OpenGL you want to use the buffer identified by the previously allocated handle. The calls to `glEnableVertexAttribArray` and `glVertexAttribPointer` tells OpenGL what the format is of the data in the buffer:  essentially we store 3 `float` values per vertex.  Then the call to `glDrawArrays` uses the data definition and the data in the buffer to render the terrain.  It is called for each column.  You use the heightmap dimensions to calculate prims, the number of vertices per column.  This value is then used to find the offset in the data for the given column. 
+All that remains for you is to render the scene using the buffer.  This is done in Listing 4.  This procedure must be called inside the game loop for every render.  As before you tell OpenGL you want to use the buffer identified by the previously allocated handle. The calls to `glEnableVertexAttribArray` and `glVertexAttribPointer` tells OpenGL what the format is of the data in the buffer:  essentially we store 3 `float` values per vertex.  Then the call to `glDrawArrays` uses the data definition and the data in the buffer to render the terrain.  It is called for each column.  You use the heightmap dimensions to calculate prims, the number of vertices per column.  This value is then used to find the offset in the data for the given column.
 
 **Listing 4:**
 {% highlight cpp %}
@@ -71,4 +71,4 @@ for (size_t i = 0; i < cols;i++)
 glDisableVertexAttribArray(0);
 {% endhighlight %}
 
-You now know a little bit more about OpenGL buffers.  You get the same picture as before – its just faster. 
+You now know a little bit more about OpenGL buffers.  You get the same picture as before – its just faster.

@@ -2,12 +2,12 @@
 layout: post
 category: graphics
 tags: [C++,terrain]
-excerpt: C++ code for a heightmap 
 ---
 If you want to render a terrain, a [heightmap](http://en.wikipedia.org/wiki/Heightmap) is a handy tool to have at your disposal.  This post explores one way to create an abstraction of this concept using the new C++ standard.     
+
 <img src="http://upload.wikimedia.org/wikipedia/commons/5/57/Heightmap.png" style="float:right"/>
 
-In its essence, a heightmap is simply a matrix of numbers where an element at *{c,r}* indicates the height of the terrain at some location.  It is a handy data structure and is also a compact way to store the details of a terrain.   The image on the right hand side is an example of a heightmap shown as a 2D image (taken from Wikipedia). The height is determined by the value of the white color: a whiter pixel indicates a higher level for the terrain at that point.  You should be able to imagine where the hills and valleys are by looking at this image long enough. 
+In its essence, a heightmap is simply a matrix of numbers where an element at *{c,r}* indicates the height of the terrain at some location.  It is a handy data structure and is also a compact way to store the details of a terrain.   The image on the right hand side is an example of a heightmap shown as a 2D image (taken from Wikipedia). The height is determined by the value of the white color: a whiter pixel indicates a higher level for the terrain at that point.  You should be able to imagine where the hills and valleys are by looking at this image long enough.
 
 As you can expect, compact storage comes with a cost: less data equals less detail.  The granularity of the terrain is determined by the size of the matrix, and also by the size of the data type used for its elements.  For instance if the elements are stored as a bytes the terrain height ranges from 0 to 255.  The height cannot be 23.5 … there is only 256 levels to choose from.  
 
@@ -15,7 +15,7 @@ Getting back to the abstraction: It seems reasonable that a heightmap needs at l
 
 First, we need is to choose a data structure for the matrix data.  We want a structure that is fixed in memory and stores consecutive elements in sequence.  This constraint will make the heightmap very useful for rendering in OpenGL.   The `std::array` container is well suited for this purpose.  
 
-Often we want to address the elements in the array using the {c,r} pair as index.  For this reason, I provided an overloaded () operator that can throw `std::out_of_range`. The code for our class template `Heightmap`, is shown in Listing 1. 
+Often we want to address the elements in the array using the {c,r} pair as index.  For this reason, I provided an overloaded () operator that can throw `std::out_of_range`. The code for our class template `Heightmap`, is shown in Listing 1.
 
 **Listing 1:**
 {% highlight cpp %}
@@ -37,7 +37,7 @@ private:
 		if (r < 0 || r >= n_rows) throw std::out_of_range("r is invalid");
 	}
 };
-{% endhighlight %} 
+{% endhighlight %}
 
 Fine and well you say, the meaning is clear, but what is the use of it all?  Ok, let’s develop a more concrete concept that actually does do something.  How about loading the heightmap from an image file, and writing it back?  
 
@@ -84,7 +84,7 @@ void read_heightmap(const string& filename,size_t buffer_size, unsigned char * b
 		}
 }
 void write_heightmap(const string& filename,int width, int height, unsigned char * buffer) {
-	SDL_Surface * s = SDL_CreateRGBSurface(SDL_SWSURFACE, width, height, 24, 
+	SDL_Surface * s = SDL_CreateRGBSurface(SDL_SWSURFACE, width, height, 24,
 		0x000000FF, 0x0000FF00, 0x00FF0000, 0);
 	auto target = (unsigned char *) s->pixels;
 	for(int c = 0; c < width; c++)

@@ -2,9 +2,8 @@
 layout: post
 category: rambling
 tags: [github pages]
-excerpt: Getting this site up and running was easy.
 ---
-Getting this site up and running was easy. But, I had to go fiddle here and tweak there. Before I knew it the afternoon was at an end. 
+Getting this site up and running was easy. But, I had to go fiddle here and tweak there. Before I knew it the afternoon was at an end.
 
 
 I decided to create accounts on [google analytics](http://www.google.com/analytics/) and [disqus](http://codespear.disqus.com/).  _Disqus_ is new to me, but it looks quite interesting.  
@@ -24,7 +23,7 @@ jekyll server --drafts --watch
 My first impression of [github pages](http://pages.github.com/) is that I have at last a blogging solution where I can:
  * write content using simple text files  
  * control the formatting
- * use GitHub to manage the content 
+ * use GitHub to manage the content
  * embed gists the [easy way](https://gist.github.com/benbalter/5555251)
  * use [latex expressions](http://christopherpoole.github.io/using-mathjax-on-github-pages) for equations
  * have nice [highlighting for code snippets](http://jekyllrb.com/docs/templates/) using [pygments](http://pygments.org).

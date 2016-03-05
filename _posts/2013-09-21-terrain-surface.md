@@ -2,10 +2,11 @@
 layout: post
 category: graphics
 tags: [terrain]
-excerpt: Find a point on the surface of a terrain 
 ---
-<img src="/assets/images/2013/terrain-surface.jpg" style="float:right"/> 
 In this post we take a look at how we can determine the location of a point on the surface of a terrain.
+
+
+<img src="/assets/images/2013/terrain-surface.jpg" style="float:right"/>
 
 Recall from the <a href="{% post_url 2013-07-13-terrain-rendering-basics %}">terrain basics post</a> that we decided on a coordinate system where \\(z\\) points upwards, \\(x\\) points west and \\(y\\) points south.  So using this coordinate system we need to determine the \\(z\\) value, given the \\((x,y)\\) world coordinate.
 
@@ -28,10 +29,10 @@ Triangle find(float c, float r) {
 		const int fr = (int) floor(r);
 		const Scalar x = c - fc;
 		const Scalar y = r - fr;
-		if (y <= x) 
+		if (y <= x)
 			return new Triangle(point(fc,fr),point(fc+1,fr),
 				point(fc+1,fr+1));
-		} else 
+		} else
 			return new Triangle(point(fc,fr+1),point(fc,fr),
 				point(fc+1,fr+1));
 		}
@@ -50,7 +51,7 @@ When the opportunity arises, it is always a good idea to review our understandin
 
 Note that \\(x\\) and \\(y\\) is rather sparse in this expression.  We can simplify as follows
 
-\\( z = (e_1 y + e_2 x + e_3) \div e_4 \\) 
+\\( z = (e_1 y + e_2 x + e_3) \div e_4 \\)
 
 Where
 
@@ -59,20 +60,20 @@ Where
 \\(e_3 = ( a_xb_y-a_yb_x) c_z+( a_zb_x-a_xb_z) c_y+( a_yb_z-a_zb_y) c_x\\)
 \\(e_4 = ( b_x-a_x) c_y+( a_y-b_y) c_x+a_xb_y-a_yb_x\\)
 
-Listing 2 illustrates how this calculation can be implemented. If you code this, it is probably a good idea to check \\(e_4\\) for \\(0\\) before dividing.  If this value is zero, the input parameters do not form a triangle. 
+Listing 2 illustrates how this calculation can be implemented. If you code this, it is probably a good idea to check \\(e_4\\) for \\(0\\) before dividing.  If this value is zero, the input parameters do not form a triangle.
 
 **Listing 2:**
 {% highlight cpp %}
 Vector plane_point(Vector a, Vector b, Vector c, Scalar x, Scalar y) {
-	const auto e1 = (( b.x()-a.x()) * c.z()+( a.z()-b.z()) * c.x()+a.x() * b.z()-a.z() * 
+	const auto e1 = (( b.x()-a.x()) * c.z()+( a.z()-b.z()) * c.x()+a.x() * b.z()-a.z() *
 		b.x());
 	const auto e2 = (( a.y()-b.y()) * c.z()+( b.z()-a.z()) * c.y()-a.y() * b.z()+a.z() *
 		b.y());
-	const auto e3 = (a.x() * b.y()-a.y() * b.x()) * c.z()+( a.z() * b.x()-a.x() 
+	const auto e3 = (a.x() * b.y()-a.y() * b.x()) * c.z()+( a.z() * b.x()-a.x()
 		* b.z()) * c.y()+( a.y() * b.z()-a.z() * b.y()) * c.x();
-	const auto e4 = (b.x()-a.x()) * c.y()+( a.y()-b.y()) * c.x()+a.x() * b.y()-a.y() * 
+	const auto e4 = (b.x()-a.x()) * c.y()+( a.y()-b.y()) * c.x()+a.x() * b.y()-a.y() *
 		b.x();
-	const auto z = (e1 * y + e2 * x +e3)/e4; 
+	const auto z = (e1 * y + e2 * x +e3)/e4;
 	return Vector(x,y,z);
 }
 {% endhighlight %}
@@ -89,7 +90,7 @@ void draw(const game::DrawContext& dc) override {
 	auto ne = floor_north_east();
 	const int steps = 200;
 	auto inc = (sw - ne) / (steps * 1.0f);
-	glBegin(GL_LINES); 
+	glBegin(GL_LINES);
 	for (int i=0;i<steps;i++) {
 		auto vi = ne + (inc*i);
 		auto fi = floor_at(vi.x(),vi.y());

@@ -2,10 +2,11 @@
 layout: post
 category: user interface
 tags: [MVP]
-excerpt: An introduction to model-view-presenter
 ---
+Many a year ago, in his paper [No Silver Bullet](http://en.wikipedia.org/wiki/No_Silver_Bullet) Fred Brooks separated essential complexity from accidental complexity. The basic argument is that a complex problem requires a design that is complex.  Does this leave us with no hope?
+
 ## The essence of the problem
-Many a year ago, in his paper [No Silver Bullet](http://en.wikipedia.org/wiki/No_Silver_Bullet) Fred Brooks separated essential complexity from accidental complexity.  One of the essential complexities he notes is that the design of a program.  The basic argument is that a complex problem requires a design that is complex.  Does this leave us with with no hope? I think not.  Complexity in itself is not prohibitive.  When we understand the complexity and we train ourselves to work within it, we become more effective.  There is no silver bullet, but equipped with only a [metal jacket](http://en.wikipedia.org/wiki/Full_metal_jacket_bullet) a trained marine is a could be a match for that werewolf. 
+I think not.  Complexity in itself is not prohibitive.  When we understand the complexity and we train ourselves to work within it, we become more effective.  There is no silver bullet, but equipped with only a [metal jacket](http://en.wikipedia.org/wiki/Full_metal_jacket_bullet) a trained marine is a could be a match for that werewolf.
 
 Fighting werewolves is entertaining, but the business of programming has some real challenges and can be much more interesting. Little should be said of a program that serves no purpose, so let us consider a typical program that solves a real-world problem.  Not all programs need it, but let's limit ourselves to those programs with a graphical user interface.  Furthermore, let us make the reasonable assumption that the program we have in mind fulfils its purpose only when a human interacts with it. An abundance of questions arise. How should we go about implementing this program? How complex is the essential problem?  Are there ways to manage this complexity?    
 
@@ -18,9 +19,9 @@ This line of reasoning suggests that the complexity of our program is [directly 
 However, a tactic is not a design. What I want to talk about is the [model-view-presenter](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter), a design  pattern that from its name presupposes the existence of a model and hints towards a design in which the view and user cues are first class citizens.  But before we can explore this pattern we need to know more about the problem it tries to solve ([Potel's paper](http://www.wildcrest.com/Potel/Portfolio/mvp.pdf) takes a slightly different angle, but it is a good read on this topic).
 
 ## What are the cues?
-The user can move a mouse, click on something and type on a keyboard. But creativity abounds in this area: he can also make a gestures on a touch screen, verbalise a command, or simply wave to a [motion detector](http://www.wired.com/2010/11/tonights-release-xbox-kinect-how-does-it-work/all/).  But, it is not medium of input that makes cues complex.  Normally the the input device is outside the program's scope - our program employs the operating system, drivers and libraries that hide away complicated implementation details. 
+The user can move a mouse, click on something and type on a keyboard. But creativity abounds in this area: he can also make a gestures on a touch screen, verbalise a command, or simply wave to a [motion detector](http://www.wired.com/2010/11/tonights-release-xbox-kinect-how-does-it-work/all/).  But, it is not medium of input that makes cues complex.  Normally the the input device is outside the program's scope - our program employs the operating system, drivers and libraries that hide away complicated implementation details.
 
-What if we have two possibilities for a cue design? Which cue is less complex than the other?  The answer lies partly in the information that the user needs to covey when taking a particular cue.  Cues that convey less information are less complex.  For example: consider a cue where the user types in text as an alternative to a him clicking on a button.  Assume both has the same objective, which one conveys more information?  It is the text because it conveys a set of characters; while the click conveys an action and a screen coordinate.  The text input is more complex because it must be parsed, and the view must include a facility to show these parse errors.  So, clicking a mouse is likely to be a simpler cue than typing a bit of text. 
+What if we have two possibilities for a cue design? Which cue is less complex than the other?  The answer lies partly in the information that the user needs to covey when taking a particular cue.  Cues that convey less information are less complex.  For example: consider a cue where the user types in text as an alternative to a him clicking on a button.  Assume both has the same objective, which one conveys more information?  It is the text because it conveys a set of characters; while the click conveys an action and a screen coordinate.  The text input is more complex because it must be parsed, and the view must include a facility to show these parse errors.  So, clicking a mouse is likely to be a simpler cue than typing a bit of text.
 
 Another source of complexity for the cue is the information the program needs to respond to it.  Let us call the object that encapsulates the response a _command_.  Consider for example a cue to delete something.  Here the user conveys his intent (i.e. he wants to delete), but we also need the subject that must be deleted.  Let us call the subject a _command parameters_.  
 
@@ -35,7 +36,7 @@ From a better understanding of cues, it is clear that the view is the thing on w
 
 The view is not one thing: it is a composition of graphical elements.  Most likely there are buttons and menus that initiates commands, lists or trees of objects that can be selected, toggle button and that shows the state of boolean switches and so.  
 
-In addition to showing selection state, the view is (most of the time) directly responsible for delivering the program's purpose.  The purpose of many programs is to provide information. We call the graphical elements that performs this function _information views_. 
+In addition to showing selection state, the view is (most of the time) directly responsible for delivering the program's purpose.  The purpose of many programs is to provide information. We call the graphical elements that performs this function _information views_.
 
 Thus we now have an example of _design feedback_.  The design of an information view may now introduce cues that changes the way information is rendered.  Do not be fooled: these cues are as important as any primary cues.  These information views are likely to become concepts in the model as well.
 
@@ -49,16 +50,13 @@ It is good to consider the selection as a special part of the model's design.  F
 ## What is the presenter?
 The presenter in the model-view-presenter design pattern is glues together the cues, the view and the model.  When the user takes a cue, the presenter decides which command to execute and which view elements to create.  The model elements the views need are passed on to them by the presenter. For example: every program has a user cue for _start-up_; and it is the presenter's job to decide what the initial view should look like.
 
-In our design we can start with one presenter element -- let us call it the _application_.  This presenter needs to know about all the commands and views.  Such wide coupling can become cumbersome for large programs, and good design practice should lead to breaking up the presenter into separate concerns. 
+In our design we can start with one presenter element -- let us call it the _application_.  This presenter needs to know about all the commands and views.  Such wide coupling can become cumbersome for large programs, and good design practice should lead to breaking up the presenter into separate concerns.
 
-If we take this separation of concerns to its ultimate breakdown; we could end up with a presenter element for each view element.  Assuming that the application presenter creates every one of these on start-up it sound like a good possibility.  In fact, it is a kind of design that leads to the concept of a _widget_ (see Bower et. al.'s paper titled [Twisting the triad](http://www.object-arts.com/downloads/papers/TwistingTheTriad.PDF)). Typically a widget spans a continuous region on the display (normally a rectangle) 
+If we take this separation of concerns to its ultimate breakdown; we could end up with a presenter element for each view element.  Assuming that the application presenter creates every one of these on start-up it sound like a good possibility.  In fact, it is a kind of design that leads to the concept of a _widget_ (see Bower et. al.'s paper titled [Twisting the triad](http://www.object-arts.com/downloads/papers/TwistingTheTriad.PDF)). Typically a widget spans a continuous region on the display (normally a rectangle)
 
-In a way, a widget is a presenter element because it brings together the user cues, a (generic) model and a graphical view into one unit. But widgets are to be instantiated and something respond to the _events_ it emits when cues are taken. 
+In a way, a widget is a presenter element because it brings together the user cues, a (generic) model and a graphical view into one unit. But widgets are to be instantiated and something respond to the _events_ it emits when cues are taken.
 
 Having more than one presenter is likely but one for every view element is too many. Consider a presenter element, which I simply call a _presenter_, as something that encapsulates a number of view elements and their related responses.   
 
 ## In a nutshell: what is MVP?
-In the model-view-presenter pattern, the presenter observes view elements and executes commands.  Commands may update the model and as a consequence, the presenter may construct new view elements and destroy existing ones. Some commands update the selection: there may be special handling for those -- i.e. bypassing the presenter.  View elements observe the model directly: they reflect changes to the model without being notified by the presenter. 
-
-
-
+In the model-view-presenter pattern, the presenter observes view elements and executes commands.  Commands may update the model and as a consequence, the presenter may construct new view elements and destroy existing ones. Some commands update the selection: there may be special handling for those -- i.e. bypassing the presenter.  View elements observe the model directly: they reflect changes to the model without being notified by the presenter.

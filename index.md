@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Tumblehome
+title: Index
 tagline: ramblings, rants and other stuff
 ---
 
@@ -11,4 +11,3 @@ tagline: ramblings, rants and other stuff
 </ul>
 <!-- i removed the link to the docs because I have not been working on gameex for a while; and I have some new ideas around the gamelib -->
 <!-- Also here: [The GameEx Documentation](/gameex/html/) -->
-

@@ -2,9 +2,11 @@
 layout: post
 category: programming
 tags: [C++,make]
-excerpt: Notable features of GNU make  
 ---
-The need for something to help with the compile process has been long recognised.  Few can disagree that the good old [_make_](http://www.gnu.org/software/make/manual/make.html) command line utility was a ground breaker in its day.  The availability of alternatives leaves one with the impression that this program does not fit the bill for today's software. This assumption is far from the truth. 
+The need for something to help with the compile process has been long recognised.  Few can disagree that the good old [_make_](http://www.gnu.org/software/make/manual/make.html) command line utility was a ground breaker in its day.  
+
+
+The availability of alternatives leaves one with the impression that this program does not fit the bill for today's software. This assumption is far from the truth.
 
 If you disagree you may not have given _make_ enough of your time to prove itself. Clearly there are situations where the features of another builder serves much better; but sometimes _make_ would do the job just fine.  It is after all very stable and available *by default* on many platforms.  
 
@@ -15,7 +17,7 @@ What I want to show you is a real world example of how _make_ can be used to bui
 {%highlight makefile linenos%}
 TARGET_DIR = RunDir
 COMPILE_ARGS = -I"SDL-1.2.15\include" -ITutLib -IGameLandLib -O3 -Wall -c -fmessage-length=0 -std=c++0x
-LINK_ARGS = -L"SDL-1.2.15\lib" -L$(TARGET_DIR) -lmingw32 -lwsock32 -lglu32 -lopengl32 -lSDLmain -lSDL_ttf -lSDL.dll 
+LINK_ARGS = -L"SDL-1.2.15\lib" -L$(TARGET_DIR) -lmingw32 -lwsock32 -lglu32 -lopengl32 -lSDLmain -lSDL_ttf -lSDL.dll
 DIRS = GameLandLib GameLandTests TutLib TerrainDemo Sneaky
 SOURCES := $(foreach e, $(DIRS), $(wildcard $(e)/*.cpp))
 DEPS := $(patsubst %.cpp, %.depends, $(SOURCES))
@@ -25,7 +27,7 @@ TUT_LIB := $(TARGET_DIR)/libTutLib.a
 GAME_LAND_TEST := $(TARGET_DIR)/GameLandTests.exe
 TERRAIN_DEMO := $(TARGET_DIR)/TerrainDemo.exe
 SNEAKY := $(TARGET_DIR)/Sneaky.exe
-.PHONY : clean all run_sneaky run_terrain run_test 
+.PHONY : clean all run_sneaky run_terrain run_test
 
 run_sneaky: $(SNEAKY)
 	cd $(TARGET_DIR); ./Sneaky.exe
@@ -42,7 +44,7 @@ $(TERRAIN_DEMO): $(OBJS) $(GAME_LAND_LIB)
 run_tests:  $(GAME_LAND_TEST)
 	cd $(TARGET_DIR); ./GameLandTests.exe
 
-$(GAME_LAND_TEST): $(OBJS) $(TUT_LIB) 
+$(GAME_LAND_TEST): $(OBJS) $(TUT_LIB)
 	g++ $(wildcard GameLandTests/*.o) -o $@ -lGameLandLib -lTutLib $(LINK_ARGS)  
 
 $(GAME_LAND_LIB): $(OBJS)
@@ -71,7 +73,7 @@ The expression `$(@:.depends=.o)` in line 46 is quite a nice _make_ trick. The `
 
 Note that the last line in the *makefile* has the effect to include all the generated `.depends` files into the _make_ definition.  
 
-There is a subtle problem with this solution for managing dependencies, and that is that the dependencies are not regenerated.  So when you add a new header, you'll have to call `make clean` to delete all the old `.depends` files.  The next call to _make_ will create new ones, and your dependencies will be correct again.  There could be a solution for this, but I am satisfied with things as they are. 
+There is a subtle problem with this solution for managing dependencies, and that is that the dependencies are not regenerated.  So when you add a new header, you'll have to call `make clean` to delete all the old `.depends` files.  The next call to _make_ will create new ones, and your dependencies will be correct again.  There could be a solution for this, but I am satisfied with things as they are.
 
 This file could make use of more macros, but it is sometimes wise to keep things readable - even if there is a bit of duplication. Apparently [recursive makefiles are harmful](http://miller.emu.id.au/pmiller/books/rmch/): this *makefile* show how simple it is to build sources from more than one directory.
 
