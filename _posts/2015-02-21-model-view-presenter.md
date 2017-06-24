@@ -3,12 +3,15 @@ layout: post
 category: user interface
 tags: [MVP]
 ---
-Many a year ago, in his paper [No Silver Bullet](http://en.wikipedia.org/wiki/No_Silver_Bullet) Fred Brooks separated essential complexity from accidental complexity. The basic argument is that a complex problem requires a design that is complex.  Does this leave us with no hope?
+Many a year ago, in his paper [No Silver Bullet](http://en.wikipedia.org/wiki/No_Silver_Bullet) Fred Brooks separated essential complexity from accidental complexity. The basic argument is that a complex problem requires a design that is complex.  Does this leave us with no hope? I think not.
 
 ## The essence of the problem
-I think not.  Complexity in itself is not prohibitive.  When we understand the complexity and we train ourselves to work within it, we become more effective.  There is no silver bullet, but equipped with only a [metal jacket](http://en.wikipedia.org/wiki/Full_metal_jacket_bullet) a trained marine is a could be a match for that werewolf.
 
-Fighting werewolves is entertaining, but the business of programming has some real challenges and can be much more interesting. Little should be said of a program that serves no purpose, so let us consider a typical program that solves a real-world problem.  Not all programs need it, but let's limit ourselves to those programs with a graphical user interface.  Furthermore, let us make the reasonable assumption that the program we have in mind fulfils its purpose only when a human interacts with it. An abundance of questions arise. How should we go about implementing this program? How complex is the essential problem?  Are there ways to manage this complexity?    
+Complexity in itself is not prohibitive.  When we understand the complexity and we train ourselves to work within it, we become more effective.  There is no silver bullet, but equipped with only a [metal jacket](http://en.wikipedia.org/wiki/Full_metal_jacket_bullet) a trained marine could be a match for that werewolf.
+
+Fighting werewolves is entertaining, but the business of programming has some real challenges and can be much more interesting. 
+
+Little should be said of a program that serves no purpose, so let us consider a typical program that solves a real-world problem.  Not all programs need it, but let's limit ourselves to those programs with a graphical user interface.  Furthermore, let us make the reasonable assumption that the program we have in mind fulfils its purpose only when a human interacts with it. An abundance of questions arise. How should we go about implementing this program? How complex is the essential problem?  Are there ways to manage this complexity?    
 
 At some point before typing in those beautiful lines of source code, it might be a good idea to do some broad stroke designing.  For our envisaged program, there seems to be three essential design elements.  For starters, there is an abstraction of the real-world problem; something I call a _model_.  Then there is a _view_ that renders elements of the model on some kind of graphical device.  Then there are gestures that the user takes in order to interact with the program.  I call these gestures _cues_.  
 
@@ -25,36 +28,36 @@ What if we have two possibilities for a cue design? Which cue is less complex th
 
 Another source of complexity for the cue is the information the program needs to respond to it.  Let us call the object that encapsulates the response a _command_.  Consider for example a cue to delete something.  Here the user conveys his intent (i.e. he wants to delete), but we also need the subject that must be deleted.  Let us call the subject a _command parameters_.  
 
-Complex command parameters does not mean there is a complex cue.  There could be sequence of simple cues that the user employs to specify parameters and then another simple cue to initiate the command.  Thus there could be values in considering to types of cues: a _selector cue_ sets up a command parameters and _command cues_ initiates a commands.  
+Complex command parameters does not mean there is a complex cue.  There could be sequence of simple cues that the user employs to specify parameters and then another simple cue to initiate the command.  Thus there could be value in considering two types of cues: a _selector cue_ sets up a command parameters and _command cues_ initiates a commands.  
 
 It would be more friendly if our application does not clear the work done by the user after each command is executed.  Typically the user can toggle switches that influences the behaviour and he uses the same selected objects to do other commands.  Obviously he makes this selection on the view.  The things he selects and toggles are concepts from the model.  
 
-Thus we conclude that the cues imposes a need on the views to have something the user can click and can select; and that _that_ something has a concept described in the model.  But crucially: a design that recognises the objects that are selected in the view as a state in itself is simpler.  We call this state, the _selection_.
+We conclude that the cues impose a need on the views to have something the user can click and can select; and that _that_ something has a concept described in the model.  But crucially: a design that recognises the objects that are selected in the view as a state in itself is simpler.  We call this state, the _selection_.
 
 ## What is the view?
-From a better understanding of cues, it is clear that the view is the thing on which the user makes a selection and initiates an action.  Essentially it does not have to to be visual. For example an application that responds to audio commands only also needs the view concept. But here we are focussing on those applications with a graphical device.
+From a better understanding of cues, it is clear that the view is the thing on which the user makes a selection and initiates an action.  Essentially it does not have to be visual. For example an application that responds to audio commands only also needs the view concept. But here we are focussing on those applications with a graphical device.
 
-The view is not one thing: it is a composition of graphical elements.  Most likely there are buttons and menus that initiates commands, lists or trees of objects that can be selected, toggle button and that shows the state of boolean switches and so.  
+The view is not one thing: it is a composition of graphical elements.  Most likely there are buttons and menus that initiates commands, lists or trees of objects that can be selected, toggle button and that shows the state of boolean switches and so on.  
 
 In addition to showing selection state, the view is (most of the time) directly responsible for delivering the program's purpose.  The purpose of many programs is to provide information. We call the graphical elements that performs this function _information views_.
 
 Thus we now have an example of _design feedback_.  The design of an information view may now introduce cues that changes the way information is rendered.  Do not be fooled: these cues are as important as any primary cues.  These information views are likely to become concepts in the model as well.
 
 ## What's the model?
-Do we understand the model now?  It is a collection of concepts that must be implemented.  The model has concept for selection; a concept for each element that can be selected, it is likely to have a concept for every information view.   
+Do we understand the model now?  It is a collection of concepts that must be implemented.  The model has a concept for selection; a concept for each element that can be selected, it is likely to have a concept for every information view.   
 
 The model is also responsible for _persistence_.  During his interaction with the program, the user creates new instances of concepts and updates existing instances -- and he might want very well these changes to be permanent. The model is responsible for writing data to  storage and reading data from that storage.
 
 It is good to consider the selection as a special part of the model's design.  For one thing: selection refers to existing concepts.  An we might not need commands to update the selection; thereby simplifying things a bit.
 
 ## What is the presenter?
-The presenter in the model-view-presenter design pattern is glues together the cues, the view and the model.  When the user takes a cue, the presenter decides which command to execute and which view elements to create.  The model elements the views need are passed on to them by the presenter. For example: every program has a user cue for _start-up_; and it is the presenter's job to decide what the initial view should look like.
+The presenter in the model-view-presenter design pattern glues together the cues, the view and the model.  When the user takes a cue, the presenter decides which command to execute and which view elements to create.  The model elements needed by a view are passed on to it by the presenter. For example: every program has a user cue for _start-up_; and it is the presenter's job to decide what the initial view should look like.
 
 In our design we can start with one presenter element -- let us call it the _application_.  This presenter needs to know about all the commands and views.  Such wide coupling can become cumbersome for large programs, and good design practice should lead to breaking up the presenter into separate concerns.
 
-If we take this separation of concerns to its ultimate breakdown; we could end up with a presenter element for each view element.  Assuming that the application presenter creates every one of these on start-up it sound like a good possibility.  In fact, it is a kind of design that leads to the concept of a _widget_ (see Bower et. al.'s paper titled [Twisting the triad](http://www.object-arts.com/downloads/papers/TwistingTheTriad.PDF)). Typically a widget spans a continuous region on the display (normally a rectangle)
+If we take this separation of concerns to its ultimate breakdown; we could end up with a presenter element for each view element.  The application presenter can create every one of these smaller presenters on start-up.  In fact, this is the kind of design that leads to the concept of a _widget_ (see Bower et. al.'s paper titled [Twisting the triad](http://www.object-arts.com/downloads/papers/TwistingTheTriad.PDF)). Typically a widget spans a continuous region on the display (normally a rectangle)
 
-In a way, a widget is a presenter element because it brings together the user cues, a (generic) model and a graphical view into one unit. But widgets are to be instantiated and something respond to the _events_ it emits when cues are taken.
+In a way, a widget is a presenter element because it brings together the user cues, a (generic) model and a graphical view into one unit. But widgets are to be instantiated and something must respond to the _events_ it emits when cues are taken.
 
 Having more than one presenter is likely but one for every view element is too many. Consider a presenter element, which I simply call a _presenter_, as something that encapsulates a number of view elements and their related responses.   
 
