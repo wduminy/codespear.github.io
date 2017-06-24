@@ -13,22 +13,26 @@ For our exploration we need a simple example problem:  For his _project_, the us
 
 ## Basic program design
 Starting with cues:
+
  * (C1) create a new `ClassPathEntry` for a `Project`,
  * (C2) delete a `ClassPathEntry` and
  * (C3) change the text of a `ClassPathEntry`.  
 
 A quick design leads to these main view elements:
+
  * (V1) a `ProjectEditView` to show the `ClassPathEntry` list,
  * (V2) an [accelerator](https://msdn.microsoft.com/en-us/library/windows/desktop/ms645526%28v=vs.85%29.aspx) item for _insert_,
  * (V3) another [accelerator] for _delete_, and
  * (V4) a `StatusBarView` that shows how items in the `ProjectEditWindow` are selected.
 
 Thus, we unsurprisingly, identify these model elements:
+
  * (M1) a `ClassPathEntry`
  * (M2) a `Project` that contains a list of `ClassPathEntry` instances and
  * (M3) a `Selection` that identifies which instances are selected.
 
 Let us not forget about persistence; thus we add new elements:
+
  * (C4) Load a `Project` when the program starts up,
  * (C5) an accelerator to save the `Project`
 
